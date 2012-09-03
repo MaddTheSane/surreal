@@ -29,7 +29,7 @@ ARGS =
 #-----------------------------------------------------------------------------
 
 .PHONY : all
-all : ucc sdldrv audio sdlaudio sdlgldrv
+all : ucc sdldrv alaudio 
 #all: audio
 #all : ucc sdldrv xdrv xmesagldrv xlaunch audio sdlaudio sdlgldrv
 .PHONY : ucc
@@ -60,9 +60,9 @@ sdlgldrv :
 glidedrv :
 	@$(MAKE) $(ARGS) --directory=$(GLIDEDRV_SRC)
 
-.PHONY : audio
-audio :
-	@$(MAKE) $(ARGS) --directory=$(AUDIO_SRC)
+.PHONY : alaudio
+alaudio :
+	@$(MAKE) $(ARGS) --directory=$(ALAUDIO_SRC)
 
 .PHONY : sdlaudio
 sdlaudio :

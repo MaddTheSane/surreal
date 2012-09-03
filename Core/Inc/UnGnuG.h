@@ -230,6 +230,18 @@ inline INT appFloor( FLOAT f )
 	#include <time.h>
 #endif
 
+// System identification.
+extern "C"
+{
+        extern HINSTANCE      hInstance;
+        extern CORE_API UBOOL GIsMMX;
+        extern CORE_API UBOOL GIsPentiumPro;
+        extern CORE_API UBOOL GIsKatmai;
+        extern CORE_API UBOOL GIsK6;
+        extern CORE_API UBOOL GIs3DNow;
+        extern CORE_API UBOOL GTimestamp;
+}
+
 //
 // CPU cycles, related to GSecondsPerCycle.
 //
@@ -321,6 +333,7 @@ inline void appMemzero( void* Dest, INT Count )
 ----------------------------------------------------------------------------*/
 
 // System identification.
+/*
 extern "C"
 {
 	extern HINSTANCE      hInstance;
@@ -331,7 +344,7 @@ extern "C"
 	extern CORE_API UBOOL GIs3DNow;
 	extern CORE_API UBOOL GTimestamp;
 }
-
+*/
 // Module name
 extern ANSICHAR GModule[32];
 

@@ -124,11 +124,11 @@ GLIDEDRV_INC		= $(UNREAL_DIR)/GlideDrv/Inc
 GLIDEDRV_BUILD		= $(UNREAL_DIR)/GlideDrv/$(BUILD_SUBDIR)
 GLIDEDRV_OUT		= $(UNREAL_DIR)/System
 
-# Unreal audio subsystem directories.
-AUDIO_SRC		= $(UNREAL_DIR)/Audio/Src
-AUDIO_INC		= $(UNREAL_DIR)/Audio/Inc
-AUDIO_BUILD		= $(UNREAL_DIR)/Audio/$(BUILD_SUBDIR)
-AUDIO_OUT		= $(UNREAL_DIR)/System
+# Unreal alaudio subsystem directories.
+ALAUDIO_SRC		= $(UNREAL_DIR)/ALAudio/Src
+ALAUDIO_INC		= $(UNREAL_DIR)/ALAudio/Inc
+ALAUDIO_BUILD		= $(UNREAL_DIR)/ALAudio/$(BUILD_SUBDIR)
+ALAUDIO_OUT		= $(UNREAL_DIR)/System
 
 # Unreal SDLaudio subsystem directories.
 SDLAUDIO_SRC		= $(UNREAL_DIR)/SDLAudio/Src
