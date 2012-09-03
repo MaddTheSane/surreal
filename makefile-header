@@ -130,7 +130,13 @@ ALAUDIO_INC		= $(UNREAL_DIR)/ALAudio/Inc
 ALAUDIO_BUILD		= $(UNREAL_DIR)/ALAudio/$(BUILD_SUBDIR)
 ALAUDIO_OUT		= $(UNREAL_DIR)/System
 
-# Unreal SDLaudio subsystem directories.
+# Unreal opengl subsystem directories.
+OPENGL_SRC             = $(UNREAL_DIR)/OpenGLDrv/Src
+OPENGL_INC             = $(UNREAL_DIR)/OpenGLDrv/Inc
+OPENGL_BUILD           = $(UNREAL_DIR)/OpenGLDrv/$(BUILD_SUBDIR)
+OPENGL_OUT             = $(UNREAL_DIR)/System
+
+
 SDLAUDIO_SRC		= $(UNREAL_DIR)/SDLAudio/Src
 SDLAUDIO_INC		= $(UNREAL_DIR)/SDLAudio/Inc
 SDLAUDIO_BUILD		= $(UNREAL_DIR)/SDLAudio/$(BUILD_SUBDIR)
@@ -153,6 +159,7 @@ ALL_SRC_DIRS 	= $(CORE_INC) $(CORE_SRC) \
 		  $(ENGINE_INC) $(ENGINE_SRC) \
 		  $(IPDRV_INC) $(IPDRV_SRC) \
 		  $(FIRE_INC) $(FIRE_SRC) \
+		  $(ALAUDIO_INC) $(ALAUDIO_SRC) \
 		  $(UCC_INC) $(UCC_SRC) \
 		  $(RENDER_INC) $(RENDER_SRC) \
 		  $(EDITOR_SRC) $(EDITOR_INC) \
@@ -179,9 +186,13 @@ XINCLUDES		= -I/usr/X11/include -I/usr/X11R6/include
 
 # SDL libs. (from http://www.devolution.com/~slouken/SDL/faq/FAQ-Linux.html#LINUX_2)
 SDL_LIBS		= -lSDL
-SDL_CFLAGS		= -I/home/kipz/surreal/Deps/SDL/include/
+SDL_CFLAGS		= -I$(CURDIR)/../../Deps/SDL/include/
 #SDL_LIBS		= $(shell sdl-config --libs)
 #SDL_CFLAGS		= $(shell sdl-config --cflags)
+
+# ALAudio libs
+#ALAUDIO_LIBS		= -lAL
+ALAUDIO_CFLAGS		= -I$(CURDIR)/../../Deps/openal-soft/include/ -I$(CURDIR)/../../Deps/libmikmod-gyp/include/
 
 # GL libs.
 GLIDEINC		= -I/usr/include/glide
@@ -248,6 +259,10 @@ GLIDEDRV_SONAME		= GlideDrv.so
 # Audio library
 AUDIO			= $(AUDIO_OUT)/Audio.so
 AUDIO_SONAME		= Audio.so
+
+# Audio library
+ALAUDIO                   = $(ALAUDIO_OUT)/ALAudio.so
+ALAUDIO_SONAME            = ALAudio.so
 
 # Audio library
 SDLAUDIO		= $(SDLAUDIO_OUT)/SDLAudio.so

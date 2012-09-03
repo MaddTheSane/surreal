@@ -29,9 +29,14 @@ ARGS =
 #-----------------------------------------------------------------------------
 
 .PHONY : all
-all : ucc sdldrv alaudio 
+all : ucc sdldrv alaudio opengl
 #all: audio
 #all : ucc sdldrv xdrv xmesagldrv xlaunch audio sdlaudio sdlgldrv
+
+.PHONY : opengl
+opengl :
+	@$(MAKE) $(ARGS) --directory=$(OPENGL_SRC)
+
 .PHONY : ucc
 ucc :
 	@$(MAKE) $(ARGS) --directory=$(UCC_SRC)

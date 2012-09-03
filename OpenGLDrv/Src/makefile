@@ -1,8 +1,8 @@
 #=============================================================================
-# Unreal Core makefile for Linux.
+# Unreal OpenGL makefile for Linux.
 #
 # Revision history:
-# 	* Created by Mike Danylchuk
+# 	* Created by James Carnegie
 #=============================================================================
 
 # Unreal directory. (Required by makefile-header.)
@@ -15,27 +15,28 @@ include $(UNREAL_DIR)/makefile-header
 # Directories.
 #-----------------------------------------------------------------------------
 
-SRC_DIRS	= $(UCC_SRC)
-BUILD_DIR	= $(UCC_BUILD)
+SRC_DIRS	= $(OPENGL_SRC)
+BUILD_DIR	= $(OPENGL_BUILD)
 
 #-----------------------------------------------------------------------------
 # Compiler/linker options.
 #-----------------------------------------------------------------------------
 
 CXX		= $(STD_CXX)
-CXXFLAGS	= $(STD_CXXFLAGS)  -I$(UCC_INC) -I$(CORE_INC) \
-			-I$(ENGINE_INC) -I$(IPDRV_INC) -DGPackage=GPackageUCC -fPIC
-LDFLAGS		= $(STD_LDFLAGS) -export-dynamic -shared
-LIBS		= $(STD_LIBS) $(CORE)
-
+CXXFLAGS	= $(STD_CXXFLAGS)   -D_HAVE_STD_INTPTR -DNO_LIMITS -DHAVE_M_PI -fPIC -I$(ENGINE_INC) -I$(OPENGLDRV_INC)\
+			-I$(CORE_INC) -DUTGLR_UT_BUILD=1 -DGPackage=GPackageVideo \
+			$(SDL_CFLAGS)
+LDFLAGS		= $(STD_LDFLAGS) -shared -Wl,-soname,$(OPENGLDRV_SONAME)
+LIBS		= $(STD_LIBS) $(CORE) $(SDL_LIBS) -lpthread
 #-----------------------------------------------------------------------------
 # Files.
 #-----------------------------------------------------------------------------
 
-OBJS =		\
-	UCC.o
+OBJS =				\
+	OpenGL.o			\
+	OpenGLDrv.o
 
-OUT = $(UCC)
+OUT = $(OPENGLDRV)
 
 #-----------------------------------------------------------------------------
 # Rules.

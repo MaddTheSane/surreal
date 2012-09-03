@@ -43,7 +43,9 @@ typedef signed int int32_t;
 typedef unsigned int uint32_t;
 typedef signed long long int64_t;
 typedef unsigned long long uint64_t;
+#ifndef _HAVE_STD_INTPTR 
 typedef unsigned long uintptr_t;
+#endif
 #endif /* if (stdint.h isn't available) */
 
 #ifdef __GNUC__

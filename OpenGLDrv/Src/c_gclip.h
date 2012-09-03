@@ -4,7 +4,10 @@
 
 #include <math.h>
 #include <deque>
+
+#ifndef NO_LIMITS
 #include <limits>
+#endif
 
 class CGClip {
 public:
