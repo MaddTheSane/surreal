@@ -26,7 +26,7 @@ CXX		= $(STD_CXX)
 CXXFLAGS	= $(STD_CXXFLAGS) -Werror -fPIC -I$(ALAUDIO_INC) -I$(ENGINE_INC) \
 			-I$(CORE_INC) -DGPackage=GPackageAudio $(ALAUDIO_CFLAGS) 
 LDFLAGS		= $(STD_LDFLAGS) -shared -Wl,-soname,$(ALAUDIO_SONAME)
-LIBS		= $(STD_LIBS) $(CORE) -lpthread 
+LIBS		= $(STD_LIBS) $(CORE) -lpthread $(ALAUDIO_LIBS) $(ENGINE)
 #-----------------------------------------------------------------------------
 # Files.
 #-----------------------------------------------------------------------------

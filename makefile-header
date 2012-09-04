@@ -191,7 +191,7 @@ SDL_CFLAGS		= -I$(CURDIR)/../../Deps/SDL/include/
 #SDL_CFLAGS		= $(shell sdl-config --cflags)
 
 # ALAudio libs
-#ALAUDIO_LIBS		= -lAL
+ALAUDIO_LIBS		= -lmikmod -lalure
 ALAUDIO_CFLAGS		= -I$(CURDIR)/../../Deps/openal-soft/include/ -I$(CURDIR)/../../Deps/libmikmod-gyp/include/
 
 # GL libs.
