@@ -176,8 +176,9 @@ UBOOL UOpenALAudioSubsystem::Init()
 
 
 	// MikMod initialization
-	MikMod_RegisterDriver( &MusicDriver );
-
+	//kipz - remove this because it breaks on new mikmod
+	//MikMod_RegisterDriver( &MusicDriver );
+	MikMod_RegisterAllDrivers();
 	// Register only formats that are known to be supported by UT.
 	// Taken from: http://wiki.beyondunreal.com/Music
 	MikMod_RegisterLoader( &load_mod );

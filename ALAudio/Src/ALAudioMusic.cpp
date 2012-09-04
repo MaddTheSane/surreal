@@ -200,6 +200,7 @@ static void UnMM_Update()
 	Driver definition
 ------------------------------------------------------------------------------------*/
 
+/*
 MDRIVER MusicDriver = {
 	NULL,
 	"Unreal OpenAL",
@@ -233,4 +234,4 @@ MDRIVER MusicDriver = {
 	VC_VoiceStopped,
 	VC_VoiceGetPosition,
 	VC_VoiceRealVolume
-};
+};*/
