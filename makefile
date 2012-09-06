@@ -29,7 +29,7 @@ ARGS =
 #-----------------------------------------------------------------------------
 
 .PHONY : all
-all : ucc sdldrv alaudio opengl
+all : ucc sdlgldrv alaudio opengl
 #all: audio
 #all : ucc sdldrv xdrv xmesagldrv xlaunch audio sdlaudio sdlgldrv
 

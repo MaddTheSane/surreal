@@ -1,8 +1,9 @@
 #=============================================================================
-# Unreal ALAudio makefile for Linux.
+# Unreal SDLGLDrv makefile for Linux.
 #
 # Revision history:
-# 	* Created by James Carnegie
+# 	* Created by Daniel Vogel (based on XMesaGLDrv) 
+#
 #=============================================================================
 
 # Unreal directory. (Required by makefile-header.)
@@ -15,28 +16,29 @@ include $(UNREAL_DIR)/makefile-header
 # Directories.
 #-----------------------------------------------------------------------------
 
-SRC_DIRS	= $(ALAUDIO_SRC)
-BUILD_DIR	= $(ALAUDIO_BUILD)
+SRC_DIRS	= $(SDLGLDRV_SRC)
+BUILD_DIR	= $(SDLGLDRV_BUILD)
 
 #-----------------------------------------------------------------------------
 # Compiler/linker options.
 #-----------------------------------------------------------------------------
 
 CXX		= $(STD_CXX)
-CXXFLAGS	= $(STD_CXXFLAGS) -Werror -fPIC -I$(ALAUDIO_INC) -I$(ENGINE_INC) \
-			-I$(CORE_INC) -DGPackage=GPackageALAudio $(ALAUDIO_CFLAGS) 
-LDFLAGS		= $(STD_LDFLAGS) -shared -Wl,-soname,$(ALAUDIO_SONAME)
-LIBS		= $(STD_LIBS) $(CORE) -lpthread $(ALAUDIO_LIBS) $(ENGINE)
+CXXFLAGS	= $(STD_CXXFLAGS) -Werror -fPIC -I$(RENDER_INC) \
+			-I$(ENGINE_INC) -I$(CORE_INC) $(XINCLUDES) \
+			-DGPackage=GPackageSDLGLDrv -DUTGLR_UT_BUILD
+LDFLAGS		= $(STD_LDFLAGS) -shared -Wl,-soname,$(SDLGLDRV_SONAME)
+LIBS		= $(STD_LIBS) $(CORE) $(SDL_LIBS)
+
 #-----------------------------------------------------------------------------
 # Files.
 #-----------------------------------------------------------------------------
 
-OBJS =				\
-	ALAudio.o			\
-	ALAudioSubsystem.o	\
-	ALAudioMusic.o
+OBJS =			\
+	SDLGL.o	\
+	SDLGLDrv.o
 
-OUT = $(ALAUDIO)
+OUT = $(SDLGLDRV)
 
 #-----------------------------------------------------------------------------
 # Rules.

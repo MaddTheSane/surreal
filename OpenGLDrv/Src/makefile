@@ -23,11 +23,11 @@ BUILD_DIR	= $(OPENGL_BUILD)
 #-----------------------------------------------------------------------------
 
 CXX		= $(STD_CXX)
-CXXFLAGS	= $(STD_CXXFLAGS)   -D_HAVE_STD_INTPTR -DNO_LIMITS -DHAVE_M_PI -fPIC -I$(ENGINE_INC) -I$(OPENGLDRV_INC)\
-			-I$(CORE_INC) -DUTGLR_UT_BUILD=1 -DGPackage=GPackageVideo \
-			$(SDL_CFLAGS)
-LDFLAGS		= $(STD_LDFLAGS) -shared -Wl,-soname,$(OPENGLDRV_SONAME)
-LIBS		= $(STD_LIBS) $(CORE) $(SDL_LIBS) -lpthread
+CXXFLAGS	= $(STD_CXXFLAGS) -D_HAVE_STD_INTPTR -DNO_LIMITS -DHAVE_M_PI -fPIC -I$(ENGINE_INC) -I$(OPENGL_INC)\
+			-I$(CORE_INC) -DUTGLR_UT_BUILD -DGPackage=GPackageOpenGLDrv \
+			$(SDL_CFLAGS) -I$(RENDER_INC) -I$(XINCLUDES)
+LDFLAGS		= $(STD_LDFLAGS) -shared -Wl,-soname,$(OPENGL_SONAME)
+LIBS		= $(STD_LIBS) $(CORE) $(SDL_LIBS) $(XLIBS)
 #-----------------------------------------------------------------------------
 # Files.
 #-----------------------------------------------------------------------------
@@ -36,7 +36,7 @@ OBJS =				\
 	OpenGL.o			\
 	OpenGLDrv.o
 
-OUT = $(OPENGLDRV)
+OUT = $(OPENGL)
 
 #-----------------------------------------------------------------------------
 # Rules.
