@@ -448,6 +448,7 @@ CORE_API void appMemzero( void* Dest, INT Count );
 //
 
 #include <new>
+#include <stdlib.h>
 
 inline void* operator new( size_t Size, const TCHAR* Tag ) throw (std::bad_alloc)
 {

@@ -48,6 +48,9 @@ Makefile
 *.vcxproj
 *.vcxproj.*
 *.opensdf
+**/xcuserdata/
+*.xccheckout
+**/project.xcworkspace/
 
 # Build products.
 out
@@ -65,3 +68,6 @@ System/*.exp
 System/*.ilk
 System/*.map
 System/*.dylib
+
+#metadata/other
+.DS_Store

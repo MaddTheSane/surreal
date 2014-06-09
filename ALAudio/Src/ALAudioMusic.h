@@ -12,7 +12,7 @@ Revision history:
 #else
 #include <AL/al.h>
 #endif
-#include <mikmod.h>
+//#include <mikmod.h>
 #include "Core.h"
 
 extern MDRIVER MusicDriver;
