@@ -14,7 +14,9 @@ Revision history:
 #endif
 #include <stdio.h>
 #include <stdlib.h>
+#ifndef __APPLE__
 #include <malloc.h>
+#endif
 #include <fcntl.h>
 
 // Tell Core to use the timeGetTime variant of appSeconds on Windows.

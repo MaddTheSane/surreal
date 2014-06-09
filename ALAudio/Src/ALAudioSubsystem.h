@@ -10,7 +10,7 @@ Revision history:
 #include <alure.h>
 #elif defined(__APPLE__)
 #include <OpenAL/al.h>
-//#include <OpenAL/alure.h>
+#include <OpenAL/alure.h>
 #else
 #include "AL/al.h"
 #include "AL/alure.h"

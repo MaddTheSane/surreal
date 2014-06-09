@@ -200,10 +200,10 @@ typedef unsigned int		BITFIELD;	// For bitfields.
 #define appAlloca(size) alloca((size+7)&~7)
 
 // Forward declaration.
-extern "C"
-{
+extern
+
 	CORE_API FTime appSecondsSlow();
-}
+
 
 //
 // Round a floating point number to an integer.
