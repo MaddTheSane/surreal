@@ -99,7 +99,7 @@ enum {CACHE_LINE_SIZE   = 32}; // Cache line size.
 // Function type macros.
 #define DLL_IMPORT
 #define DLL_EXPORT			extern "C"
-#define DLL_EXPORT_CLASS
+#define DLL_EXPORT_CLASS	extern
 #define VARARGS
 #define CDECL
 #define STDCALL

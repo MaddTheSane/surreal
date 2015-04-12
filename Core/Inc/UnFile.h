@@ -448,7 +448,6 @@ CORE_API void appMemzero( void* Dest, INT Count );
 //
 
 #include <new>
-
 inline void* operator new( size_t Size, const TCHAR* Tag ) throw (std::bad_alloc)
 {
 	guardSlow(new);
@@ -459,6 +458,8 @@ inline void* operator new( size_t Size, const TCHAR* Tag ) throw (std::bad_alloc
 #endif
 	unguardSlow;
 }
+
+#ifndef __APPLE__
 inline void* operator new( size_t Size ) throw (std::bad_alloc)
 {
 	guardSlow(new);
@@ -480,6 +481,8 @@ inline void operator delete( void* Ptr ) throw ()
 	unguardSlow;
 }
 
+#endif
+
 #if PLATFORM_NEEDS_ARRAY_NEW
 inline void* operator new[]( size_t Size, const TCHAR* Tag ) throw (std::bad_alloc)
 {
@@ -491,6 +494,11 @@ inline void* operator new[]( size_t Size, const TCHAR* Tag ) throw (std::bad_all
 #endif
 	unguardSlow;
 }
+
+#endif
+
+#if !defined(__APPLE__) && PLATFORM_NEEDS_ARRAY_NEW
+
 inline void* operator new[]( size_t Size ) throw (std::bad_alloc)
 {
 	guardSlow(new);
@@ -501,6 +509,7 @@ inline void* operator new[]( size_t Size ) throw (std::bad_alloc)
 #endif
 	unguardSlow;
 }
+
 inline void operator delete[]( void* Ptr ) throw ()
 {
 	guardSlow(delete);
