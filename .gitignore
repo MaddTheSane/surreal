@@ -48,9 +48,9 @@ Makefile
 *.vcxproj
 *.vcxproj.*
 *.opensdf
-**/xcuserdata/
+xcuserdata/
 *.xccheckout
-**/project.xcworkspace/
+project.xcworkspace/
 
 # Build products.
 out
