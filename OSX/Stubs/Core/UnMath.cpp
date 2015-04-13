@@ -15,3 +15,4 @@ FGlobalMath::FGlobalMath()
 	
 }
 
+FVector FVector::SafeNormal() const { return *this;}

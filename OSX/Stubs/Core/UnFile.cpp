@@ -8,6 +8,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 #include "Core.h"
 
 void __Context::StaticInit()
@@ -348,4 +349,58 @@ const TCHAR* LocalizeGeneral( const TCHAR* Key, const TCHAR* Package, const TCHA
 	return nullptr;
 }
 
+DOUBLE appSqrt( DOUBLE Value )
+{
+	return sqrt(Value);
+}
 
+DOUBLE appExp( DOUBLE Value )
+{
+	return exp(Value);
+}
+DOUBLE appLoge( DOUBLE Value )
+{
+	return log(Value);
+}
+DOUBLE appFmod( DOUBLE A, DOUBLE B )
+{
+	return fmod(A, B);
+}
+DOUBLE appSin( DOUBLE Value )
+{
+	return sin(Value);
+}
+DOUBLE appCos( DOUBLE Value )
+{
+	return cos(Value);
+}
+DOUBLE appAcos( DOUBLE Value )
+{
+	return acos(Value);
+}
+DOUBLE appTan( DOUBLE Value )
+{
+	return tan(Value);
+}
+DOUBLE appAtan( DOUBLE Value )
+{
+	return atan(Value);
+}
+DOUBLE appAtan2( DOUBLE Y, DOUBLE X )
+{
+	return atan2(Y, X);
+}
+DOUBLE appPow( DOUBLE A, DOUBLE B )
+{
+	return pow(A, B);
+}
+UBOOL appIsNan( DOUBLE Value )
+{
+	return isnan(Value);
+}
+
+FTime appSecondsSlow() {return FTime();}
+void appSleep( FLOAT Seconds ) {}
+
+DWORD appCycles() {return 0;}
+UBOOL ParseCommand( const TCHAR** Stream, const TCHAR* Match ) {return 0;}

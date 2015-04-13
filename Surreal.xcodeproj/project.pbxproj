@@ -158,6 +158,24 @@
 		5570223D1969FDAD004B7637 /* SDLDrv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55122A4019463168000BFC2B /* SDLDrv.cpp */; };
 		5570223E1969FDB0004B7637 /* SDLViewport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55122A4119463168000BFC2B /* SDLViewport.cpp */; };
 		55A32C0D1ADB33F200608626 /* UnRenDev.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55A32C0C1ADB33F200608626 /* UnRenDev.cpp */; };
+		55A32C161ADB379E00608626 /* ALAudio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55F13BE819460ACD006E4D16 /* ALAudio.cpp */; };
+		55A32C171ADB379E00608626 /* ALAudioMusic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55F13BE919460ACD006E4D16 /* ALAudioMusic.cpp */; };
+		55A32C181ADB379E00608626 /* ALAudioSubsystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55F13BEB19460ACD006E4D16 /* ALAudioSubsystem.cpp */; };
+		55A32C191ADB388400608626 /* libalure.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F1470F19460F20006E4D16 /* libalure.a */; };
+		55A32C1A1ADB388400608626 /* libCore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 551F4329196A0AAD00610BC4 /* libCore.dylib */; };
+		55A32C1B1ADB388400608626 /* libEngine.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 55702243196A0055004B7637 /* libEngine.dylib */; };
+		55A32C241ADB389900608626 /* libmikmod.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F1470719460E66006E4D16 /* libmikmod.a */; };
+		55A32C251ADB38B200608626 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551229D719462EAF000BFC2B /* OpenAL.framework */; };
+		55A32C261ADB38D500608626 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551229DD19462EBE000BFC2B /* CoreAudio.framework */; };
+		55A32C281ADB39F400608626 /* UnAudio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55A32C271ADB39F400608626 /* UnAudio.cpp */; };
+		55A32C2A1ADB3EE400608626 /* UnArc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55A32C291ADB3EE400608626 /* UnArc.cpp */; };
+		55A32C331ADB414E00608626 /* c_gclip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55122A4A194631AF000BFC2B /* c_gclip.cpp */; };
+		55A32C341ADB415100608626 /* OpenGL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55122A4E194631AF000BFC2B /* OpenGL.cpp */; };
+		55A32C351ADB415500608626 /* OpenGLDrv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55122A51194631AF000BFC2B /* OpenGLDrv.cpp */; };
+		55A32C3A1ADB41AF00608626 /* libCore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 551F4329196A0AAD00610BC4 /* libCore.dylib */; };
+		55A32C3B1ADB41AF00608626 /* libEngine.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 55702243196A0055004B7637 /* libEngine.dylib */; };
+		55A32C3C1ADB41C300608626 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551229E119462ECF000BFC2B /* SDL2.framework */; };
+		55A32C3E1ADB44A100608626 /* UnTex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55A32C3D1ADB44A100608626 /* UnTex.cpp */; };
 		55F13BAD194609DB006E4D16 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F13BAC194609DB006E4D16 /* Cocoa.framework */; };
 		55F13BB7194609DB006E4D16 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 55F13BB5194609DB006E4D16 /* InfoPlist.strings */; };
 		55F13BB9194609DB006E4D16 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F13BB8194609DB006E4D16 /* main.m */; };
@@ -187,6 +205,48 @@
 			remoteInfo = Core;
 		};
 		551F43B0196A281700610BC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55F13BA1194609DB006E4D16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55702242196A0055004B7637;
+			remoteInfo = Engine;
+		};
+		55A32C1C1ADB389400608626 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55F13BA1194609DB006E4D16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55F1470E19460F20006E4D16;
+			remoteInfo = alure;
+		};
+		55A32C1E1ADB389400608626 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55F13BA1194609DB006E4D16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 551F42E8196A0AAD00610BC4;
+			remoteInfo = Core;
+		};
+		55A32C201ADB389400608626 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55F13BA1194609DB006E4D16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55702242196A0055004B7637;
+			remoteInfo = Engine;
+		};
+		55A32C221ADB389400608626 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55F13D1C19460D44006E4D16 /* libmikmod.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A4E3AF5D05D43FCC000F1B47;
+			remoteInfo = "CoreAudio Static Library";
+		};
+		55A32C361ADB41A600608626 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55F13BA1194609DB006E4D16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 551F42E8196A0AAD00610BC4;
+			remoteInfo = Core;
+		};
+		55A32C381ADB41A600608626 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 55F13BA1194609DB006E4D16 /* Project object */;
 			proxyType = 1;
@@ -313,6 +373,11 @@
 		557022341969FD02004B7637 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		55702243196A0055004B7637 /* libEngine.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libEngine.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		55A32C0C1ADB33F200608626 /* UnRenDev.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UnRenDev.cpp; sourceTree = "<group>"; };
+		55A32C121ADB36DB00608626 /* libALAudio.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libALAudio.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		55A32C271ADB39F400608626 /* UnAudio.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UnAudio.cpp; sourceTree = "<group>"; };
+		55A32C291ADB3EE400608626 /* UnArc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UnArc.cpp; sourceTree = "<group>"; };
+		55A32C2F1ADB413400608626 /* libOpenGLDrv.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libOpenGLDrv.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		55A32C3D1ADB44A100608626 /* UnTex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UnTex.cpp; sourceTree = "<group>"; };
 		55F13BA9194609DB006E4D16 /* Surreal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Surreal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55F13BAC194609DB006E4D16 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		55F13BAF194609DB006E4D16 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -464,6 +529,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				551F433B196A24B200610BC4 /* libCore.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55A32C0F1ADB36DB00608626 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55A32C261ADB38D500608626 /* CoreAudio.framework in Frameworks */,
+				55A32C251ADB38B200608626 /* OpenAL.framework in Frameworks */,
+				55A32C241ADB389900608626 /* libmikmod.a in Frameworks */,
+				55A32C191ADB388400608626 /* libalure.a in Frameworks */,
+				55A32C1A1ADB388400608626 /* libCore.dylib in Frameworks */,
+				55A32C1B1ADB388400608626 /* libEngine.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55A32C2C1ADB413400608626 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55A32C3C1ADB41C300608626 /* SDL2.framework in Frameworks */,
+				55A32C3A1ADB41AF00608626 /* libCore.dylib in Frameworks */,
+				55A32C3B1ADB41AF00608626 /* libEngine.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -625,6 +713,8 @@
 				551F43AD196A276A00610BC4 /* UnCamera.cpp */,
 				551F43B3196A2DFA00610BC4 /* UnPlayer.cpp */,
 				55A32C0C1ADB33F200608626 /* UnRenDev.cpp */,
+				55A32C271ADB39F400608626 /* UnAudio.cpp */,
+				55A32C3D1ADB44A100608626 /* UnTex.cpp */,
 			);
 			name = Stubs;
 			path = ../OSX/Stubs/Engine;
@@ -643,6 +733,7 @@
 				551F43A9196A265800610BC4 /* UnMath.cpp */,
 				551F43B5196A351200610BC4 /* UnType.cpp */,
 				551F43B7196A3FA900610BC4 /* UnCorObj.cpp */,
+				55A32C291ADB3EE400608626 /* UnArc.cpp */,
 			);
 			name = Stubs;
 			path = ../OSX/Stubs/Core;
@@ -683,6 +774,8 @@
 				5570222E1969FD02004B7637 /* SDLDrv.bundle */,
 				55702243196A0055004B7637 /* libEngine.dylib */,
 				551F4329196A0AAD00610BC4 /* libCore.dylib */,
+				55A32C121ADB36DB00608626 /* libALAudio.dylib */,
+				55A32C2F1ADB413400608626 /* libOpenGLDrv.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1176,6 +1269,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		55A32C101ADB36DB00608626 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55A32C2D1ADB413400608626 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		55F1470D19460F20006E4D16 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -1240,6 +1347,46 @@
 			productReference = 55702243196A0055004B7637 /* libEngine.dylib */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
+		55A32C111ADB36DB00608626 /* ALAudio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55A32C131ADB36DB00608626 /* Build configuration list for PBXNativeTarget "ALAudio" */;
+			buildPhases = (
+				55A32C0E1ADB36DB00608626 /* Sources */,
+				55A32C0F1ADB36DB00608626 /* Frameworks */,
+				55A32C101ADB36DB00608626 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55A32C1D1ADB389400608626 /* PBXTargetDependency */,
+				55A32C1F1ADB389400608626 /* PBXTargetDependency */,
+				55A32C211ADB389400608626 /* PBXTargetDependency */,
+				55A32C231ADB389400608626 /* PBXTargetDependency */,
+			);
+			name = ALAudio;
+			productName = ALAudio;
+			productReference = 55A32C121ADB36DB00608626 /* libALAudio.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		55A32C2E1ADB413400608626 /* OpenGLDrv */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55A32C301ADB413400608626 /* Build configuration list for PBXNativeTarget "OpenGLDrv" */;
+			buildPhases = (
+				55A32C2B1ADB413400608626 /* Sources */,
+				55A32C2C1ADB413400608626 /* Frameworks */,
+				55A32C2D1ADB413400608626 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55A32C371ADB41A600608626 /* PBXTargetDependency */,
+				55A32C391ADB41A600608626 /* PBXTargetDependency */,
+			);
+			name = OpenGLDrv;
+			productName = OpenGLDrv;
+			productReference = 55A32C2F1ADB413400608626 /* libOpenGLDrv.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
 		55F13BA8194609DB006E4D16 /* Surreal */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 55F13BDA194609DB006E4D16 /* Build configuration list for PBXNativeTarget "Surreal" */;
@@ -1283,6 +1430,14 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "C.W. Betts";
+				TargetAttributes = {
+					55A32C111ADB36DB00608626 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					55A32C2E1ADB413400608626 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+				};
 			};
 			buildConfigurationList = 55F13BA4194609DB006E4D16 /* Build configuration list for PBXProject "Surreal" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1309,6 +1464,8 @@
 				5570222D1969FD02004B7637 /* SDLDrv */,
 				551F42E8196A0AAD00610BC4 /* Core */,
 				55702242196A0055004B7637 /* Engine */,
+				55A32C111ADB36DB00608626 /* ALAudio */,
+				55A32C2E1ADB413400608626 /* OpenGLDrv */,
 			);
 		};
 /* End PBXProject section */
@@ -1363,6 +1520,7 @@
 				551F4332196A122500610BC4 /* UnMem.cpp in Sources */,
 				551F4336196A1A9400610BC4 /* UnName.cpp in Sources */,
 				551F4334196A12DD00610BC4 /* UnFile.cpp in Sources */,
+				55A32C2A1ADB3EE400608626 /* UnArc.cpp in Sources */,
 				551F433A196A23F600610BC4 /* UnTemplate.cpp in Sources */,
 				551F4330196A0C4500610BC4 /* UnClass.cpp in Sources */,
 				551F4338196A1C3000610BC4 /* UnObjBas.cpp in Sources */,
@@ -1384,10 +1542,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55A32C281ADB39F400608626 /* UnAudio.cpp in Sources */,
 				55A32C0D1ADB33F200608626 /* UnRenDev.cpp in Sources */,
 				551F42E3196A098100610BC4 /* AActor.cpp in Sources */,
 				551F43B4196A2DFA00610BC4 /* UnPlayer.cpp in Sources */,
+				55A32C3E1ADB44A100608626 /* UnTex.cpp in Sources */,
 				551F43AF196A280D00610BC4 /* UnCamera.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55A32C0E1ADB36DB00608626 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55A32C161ADB379E00608626 /* ALAudio.cpp in Sources */,
+				55A32C171ADB379E00608626 /* ALAudioMusic.cpp in Sources */,
+				55A32C181ADB379E00608626 /* ALAudioSubsystem.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55A32C2B1ADB413400608626 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55A32C351ADB415500608626 /* OpenGLDrv.cpp in Sources */,
+				55A32C341ADB415100608626 /* OpenGL.cpp in Sources */,
+				55A32C331ADB414E00608626 /* c_gclip.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1441,6 +1621,36 @@
 			isa = PBXTargetDependency;
 			target = 55702242196A0055004B7637 /* Engine */;
 			targetProxy = 551F43B0196A281700610BC4 /* PBXContainerItemProxy */;
+		};
+		55A32C1D1ADB389400608626 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55F1470E19460F20006E4D16 /* alure */;
+			targetProxy = 55A32C1C1ADB389400608626 /* PBXContainerItemProxy */;
+		};
+		55A32C1F1ADB389400608626 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 551F42E8196A0AAD00610BC4 /* Core */;
+			targetProxy = 55A32C1E1ADB389400608626 /* PBXContainerItemProxy */;
+		};
+		55A32C211ADB389400608626 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55702242196A0055004B7637 /* Engine */;
+			targetProxy = 55A32C201ADB389400608626 /* PBXContainerItemProxy */;
+		};
+		55A32C231ADB389400608626 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CoreAudio Static Library";
+			targetProxy = 55A32C221ADB389400608626 /* PBXContainerItemProxy */;
+		};
+		55A32C371ADB41A600608626 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 551F42E8196A0AAD00610BC4 /* Core */;
+			targetProxy = 55A32C361ADB41A600608626 /* PBXContainerItemProxy */;
+		};
+		55A32C391ADB41A600608626 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55702242196A0055004B7637 /* Engine */;
+			targetProxy = 55A32C381ADB41A600608626 /* PBXContainerItemProxy */;
 		};
 		55F1470A19460EC5006E4D16 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1607,6 +1817,106 @@
 					"$(inherited)",
 				);
 				LD_DYLIB_INSTALL_NAME = "@rpath/$(EXECUTABLE_PATH)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		55A32C141ADB36DB00608626 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"GPackage=GPackageALAudio",
+					UTGLR_NO_APP_MALLOC,
+					UTGLR_UT_BUILD,
+					"$(inherited)",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		55A32C151ADB36DB00608626 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"GPackage=GPackageALAudio",
+					UTGLR_NO_APP_MALLOC,
+					UTGLR_UT_BUILD,
+					"$(inherited)",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		55A32C311ADB413400608626 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"GPackage=GPackageOpenGLDrv",
+					UTGLR_NO_APP_MALLOC,
+					UTGLR_UT_BUILD,
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					/Library/Frameworks/SDL2.framework/Headers,
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		55A32C321ADB413400608626 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"GPackage=GPackageOpenGLDrv",
+					UTGLR_NO_APP_MALLOC,
+					UTGLR_UT_BUILD,
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					/Library/Frameworks/SDL2.framework/Headers,
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -1811,6 +2121,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		55A32C131ADB36DB00608626 /* Build configuration list for PBXNativeTarget "ALAudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55A32C141ADB36DB00608626 /* Debug */,
+				55A32C151ADB36DB00608626 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		55A32C301ADB413400608626 /* Build configuration list for PBXNativeTarget "OpenGLDrv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55A32C311ADB413400608626 /* Debug */,
+				55A32C321ADB413400608626 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		55F13BA4194609DB006E4D16 /* Build configuration list for PBXProject "Surreal" */ = {
 			isa = XCConfigurationList;

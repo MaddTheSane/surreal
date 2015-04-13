@@ -30,3 +30,5 @@ INT FMemStack::GetByteCount()
 	return 0;
 }
 
+BYTE* FMemStack::AllocateNewChunk( INT MinSize ) {return nullptr;}
+void FMemStack::FreeChunks( FTaggedMemory* NewTopChunk ) {}

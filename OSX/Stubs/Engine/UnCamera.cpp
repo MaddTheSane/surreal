@@ -15,10 +15,10 @@ UClient::UClient()
 {
 	
 }
-void UClient::StaticConstructor()
-{
-	
-}
+void UClient::StaticConstructor() { }
+
+void UClient::Init( UEngine* InEngine ) { }
+UBOOL UClient::Exec( const TCHAR* Cmd, FOutputDevice& Ar ) {return 0;}
 
 // UObject interface.
 void UClient::Serialize( FArchive& Ar )
