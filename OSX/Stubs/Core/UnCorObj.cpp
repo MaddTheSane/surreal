@@ -30,7 +30,7 @@ void UPackage::Serialize( FArchive& Ar )
 // UPackage interface.
 void* UPackage::GetDllExport( const TCHAR* ExportName, UBOOL Checked )
 {
-	return nullptr;
+	return NULL;
 }
 
 IMPLEMENT_CLASS(USubsystem)

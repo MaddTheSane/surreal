@@ -144,7 +144,7 @@ void UFunction::Link( FArchive& Ar, UBOOL Props )
 
 UProperty* UFunction::GetReturnProperty()
 {
-	return nullptr;
+	return NULL;
 }
 
 IMPLEMENT_CLASS(UStruct)
@@ -263,7 +263,7 @@ void UField::Bind()
 
 UClass* UField::GetOwnerClass()
 {
-	return nullptr;
+	return NULL;
 }
 
 INT UField::GetPropertiesSize()

@@ -75,7 +75,7 @@ const void appGetLastError()
 
 void* appGetDllHandle( const TCHAR* DllName )
 {
-	return nullptr;
+	return NULL;
 }
 
 void appFreeDllHandle( void* DllHandle )
@@ -85,7 +85,7 @@ void appFreeDllHandle( void* DllHandle )
 
 void* appGetDllExport( void* DllHandle, const TCHAR* ExportName )
 {
-	return nullptr;
+	return NULL;
 }
 
 void appLaunchURL( const TCHAR* URL, const TCHAR* Parms, FString* Error )
@@ -95,7 +95,7 @@ void appLaunchURL( const TCHAR* URL, const TCHAR* Parms, FString* Error )
 
 void* appCreateProc( const TCHAR* URL, const TCHAR* Parms , UBOOL bRealTime )
 {
-	return nullptr;
+	return NULL;
 }
 
 UBOOL appGetProcReturnCode( void* ProcHandle, INT* ReturnCode )
@@ -140,22 +140,22 @@ FString appClipboardPaste()
 
 const ANSICHAR* appToAnsi( const TCHAR* Str )
 {
-	return nullptr;
+	return NULL;
 }
 
 const UNICHAR* appToUnicode( const TCHAR* Str )
 {
-	return nullptr;
+	return NULL;
 }
 
 const TCHAR* appFromAnsi( const ANSICHAR* Str )
 {
-	return nullptr;
+	return NULL;
 }
 
 const TCHAR* appFromUnicode( const UNICHAR* Str )
 {
-	return nullptr;
+	return NULL;
 }
 
 UBOOL appIsPureAnsi( const TCHAR* Str )
@@ -301,52 +301,52 @@ UBOOL ParseParam( const TCHAR* Stream, const TCHAR* Param )
 
 const TCHAR* appCmdLine()
 {
-	return nullptr;
+	return NULL;
 }
 
 const TCHAR* appBaseDir()
 {
-	return nullptr;
+	return NULL;
 }
 
 const TCHAR* appPackage()
 {
-	return nullptr;
+	return NULL;
 }
 
 const TCHAR* appComputerName()
 {
-	return nullptr;
+	return NULL;
 }
 
 const TCHAR* appUserName()
 {
-	return nullptr;
+	return NULL;
 }
 
 CORE_API const TCHAR* Localize( const TCHAR* Section, const TCHAR* Key, const TCHAR* Package, const TCHAR* LangExt, UBOOL Optional )
 {
-	return nullptr;
+	return NULL;
 }
 
 const TCHAR* LocalizeError( const TCHAR* Key, const TCHAR* Package, const TCHAR* LangExt )
 {
-	return nullptr;
+	return NULL;
 }
 
 const TCHAR* LocalizeProgress( const TCHAR* Key, const TCHAR* Package, const TCHAR* LangExt )
 {
-	return nullptr;
+	return NULL;
 }
 
 const TCHAR* LocalizeQuery( const TCHAR* Key, const TCHAR* Package, const TCHAR* LangExt )
 {
-	return nullptr;
+	return NULL;
 }
 
 const TCHAR* LocalizeGeneral( const TCHAR* Key, const TCHAR* Package, const TCHAR* LangExt )
 {
-	return nullptr;
+	return NULL;
 }
 
 DOUBLE appSqrt( DOUBLE Value )

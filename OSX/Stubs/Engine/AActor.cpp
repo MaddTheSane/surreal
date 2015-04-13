@@ -16,7 +16,7 @@ void AActor::Destroy()
 
 INT* AActor::GetOptimizedRepList( BYTE* InDefault, FPropertyRetirement* Retire, INT* Ptr, UPackageMap* Map, INT NumReps )
 {
-	return nullptr;
+	return NULL;
 }
 
 FLOAT AActor::UpdateFrequency(AActor *Viewer, FVector &ViewDir, FVector &ViewPos)
@@ -90,10 +90,10 @@ void AActor::performPhysics(FLOAT DeltaSeconds)
 
 UTexture* AActor::GetSkin( INT Index )
 {
-	return nullptr;
+	return NULL;
 }
 
 FMeshAnimSeq* AActor::GetAnim( FName SequenceName )
 {
-	return nullptr;
+	return NULL;
 }

@@ -149,30 +149,30 @@ void UObject::LanguageChange()
 
 UObject* UObject::StaticFindObject( UClass* Class, UObject* InOuter, const TCHAR* Name, UBOOL ExactClass )
 {
-	return nullptr;
+	return NULL;
 }
 
 UObject* UObject::StaticFindObjectChecked( UClass* Class, UObject* InOuter, const TCHAR* Name, UBOOL ExactClass )
 {
-	return nullptr;
+	return NULL;
 }
 UObject* UObject::StaticLoadObject( UClass* Class, UObject* InOuter, const TCHAR* Name, const TCHAR* Filename, DWORD LoadFlags, UPackageMap* Sandbox )
 {
-	return nullptr;
+	return NULL;
 }
 UClass* UObject::StaticLoadClass( UClass* BaseClass, UObject* InOuter, const TCHAR* Name, const TCHAR* Filename, DWORD LoadFlags, UPackageMap* Sandbox )
 {
-	return nullptr;
+	return NULL;
 }
 
 UObject* UObject::StaticAllocateObject( UClass* Class, UObject* InOuter, FName Name, DWORD SetFlags, UObject* Template, FOutputDevice* Error, UObject* Ptr )
 {
-	return nullptr;
+	return NULL;
 }
 
 UObject* UObject::StaticConstructObject( UClass* Class, UObject* InOuter, FName Name, DWORD SetFlags, UObject* Template, FOutputDevice* Error )
 {
-	return nullptr;
+	return NULL;
 }
 
 void UObject::StaticInit()
@@ -197,7 +197,7 @@ void UObject::StaticTick()
 
 UObject* UObject::LoadPackage( UObject* InOuter, const TCHAR* Filename, DWORD LoadFlags )
 {
-	return nullptr;
+	return NULL;
 }
 
 UBOOL UObject::SavePackage( UObject* InOuter, UObject* Base, DWORD TopLevelFlags, const TCHAR* Filename, FOutputDevice* Error, ULinkerLoad* Conform )
@@ -252,12 +252,12 @@ void UObject::ResetLoaders( UObject* InOuter, UBOOL DynamicOnly, UBOOL ForceLazy
 
 UPackage* UObject::CreatePackage( UObject* InOuter, const TCHAR* PkgName )
 {
-	return nullptr;
+	return NULL;
 }
 
 ULinkerLoad* UObject::GetPackageLinker( UObject* InOuter, const TCHAR* Filename, DWORD LoadFlags, UPackageMap* Sandbox, FGuid* CompatibleGuid )
 {
-	return nullptr;
+	return NULL;
 }
 void UObject::StaticShutdownAfterError()
 {
@@ -266,7 +266,7 @@ void UObject::StaticShutdownAfterError()
 
 UObject* UObject::GetIndexedObject( INT Index )
 {
-	return nullptr;
+	return NULL;
 }
 
 void UObject::GlobalSetProperty( const TCHAR* Value, UClass* Class, UProperty* Property, INT Offset, UBOOL Immediate )
@@ -301,7 +301,7 @@ UBOOL UObject::GetInitialized()
 
 UPackage* UObject::GetTransientPackage()
 {
-	return nullptr;
+	return NULL;
 }
 
 void UObject::VerifyLinker( ULinkerLoad* Linker )
@@ -321,7 +321,7 @@ void UObject::BindPackage( UPackage* Pkg )
 
 const TCHAR* UObject::GetLanguage()
 {
-	return nullptr;
+	return NULL;
 }
 
 void UObject::SetLanguage( const TCHAR* LanguageExt )
@@ -346,7 +346,7 @@ const TCHAR* UObject::GetFullName( TCHAR* Str ) const
 
 const TCHAR* UObject::GetPathName( UObject* StopOuter, TCHAR* Str ) const
 {
-	return nullptr;
+	return NULL;
 }
 
 UBOOL UObject::IsValid()
@@ -386,22 +386,22 @@ void UObject::Rename( const TCHAR* NewName )
 
 UField* UObject::FindObjectField( FName InName, UBOOL Global )
 {
-	return nullptr;
+	return NULL;
 }
 
 UFunction* UObject::FindFunction( FName InName, UBOOL Global )
 {
-	return nullptr;
+	return NULL;
 }
 
 UFunction* UObject::FindFunctionChecked( FName InName, UBOOL Global )
 {
-	return nullptr;
+	return NULL;
 }
 
 UState* UObject::FindState( FName InName )
 {
-	return nullptr;
+	return NULL;
 }
 
 void UObject::SaveConfig( DWORD Flags, const TCHAR* Filename )

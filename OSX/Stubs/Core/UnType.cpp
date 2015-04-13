@@ -111,7 +111,7 @@ void UByteProperty::ExportTextItem( TCHAR* ValueStr, BYTE* PropertyValue, BYTE* 
 
 const TCHAR* UByteProperty::ImportText( const TCHAR* Buffer, BYTE* Data, INT PortFlags ) const
 {
-	return nullptr;
+	return NULL;
 }
 
 void UByteProperty::CopySingleValue( void* Dest, void* Src ) const
@@ -157,7 +157,7 @@ void UIntProperty::ExportTextItem( TCHAR* ValueStr, BYTE* PropertyValue, BYTE* D
 
 const TCHAR* UIntProperty::ImportText( const TCHAR* Buffer, BYTE* Data, INT PortFlags ) const
 {
-	return nullptr;
+	return NULL;
 }
 
 void UIntProperty::CopySingleValue( void* Dest, void* Src ) const
@@ -208,7 +208,7 @@ void UBoolProperty::ExportTextItem( TCHAR* ValueStr, BYTE* PropertyValue, BYTE* 
 
 const TCHAR* UBoolProperty::ImportText( const TCHAR* Buffer, BYTE* Data, INT PortFlags ) const
 {
-	return nullptr;
+	return NULL;
 }
 
 void UBoolProperty::CopySingleValue( void* Dest, void* Src ) const
@@ -249,7 +249,7 @@ void UFloatProperty::ExportTextItem( TCHAR* ValueStr, BYTE* PropertyValue, BYTE*
 
 const TCHAR* UFloatProperty::ImportText( const TCHAR* Buffer, BYTE* Data, INT PortFlags ) const
 {
-	return nullptr;
+	return NULL;
 }
 
 void UFloatProperty::CopySingleValue( void* Dest, void* Src ) const
@@ -301,7 +301,7 @@ void UObjectProperty::ExportTextItem( TCHAR* ValueStr, BYTE* PropertyValue, BYTE
 
 const TCHAR* UObjectProperty::ImportText( const TCHAR* Buffer, BYTE* Data, INT PortFlags ) const
 {
-	return nullptr;
+	return NULL;
 }
 
 void UObjectProperty::CopySingleValue( void* Dest, void* Src ) const
@@ -322,7 +322,7 @@ void UClassProperty::Serialize(FArchive &Ar)
 
 const TCHAR* UClassProperty::ImportText( const TCHAR* Buffer, BYTE* Data, INT PortFlags ) const
 {
-	return nullptr;
+	return NULL;
 }
 
 IMPLEMENT_CLASS(UNameProperty)
@@ -353,7 +353,7 @@ void UNameProperty::ExportTextItem( TCHAR* ValueStr, BYTE* PropertyValue, BYTE* 
 
 const TCHAR* UNameProperty::ImportText( const TCHAR* Buffer, BYTE* Data, INT PortFlags ) const
 {
-	return nullptr;
+	return NULL;
 }
 
 void UNameProperty::CopySingleValue( void* Dest, void* Src ) const
@@ -400,7 +400,7 @@ void UStrProperty::ExportTextItem( TCHAR* ValueStr, BYTE* PropertyValue, BYTE* D
 
 const TCHAR* UStrProperty::ImportText( const TCHAR* Buffer, BYTE* Data, INT PortFlags ) const
 {
-	return nullptr;
+	return NULL;
 }
 
 void UStrProperty::CopySingleValue( void* Dest, void* Src ) const

@@ -113,7 +113,7 @@ void UViewport::Unlock( UBOOL Blit )
 
 void* UViewport::GetServer()
 {
-	return nullptr;
+	return NULL;
 }
 
 void UViewport::ExecMacro( const TCHAR* Filename, FOutputDevice& Ar )
