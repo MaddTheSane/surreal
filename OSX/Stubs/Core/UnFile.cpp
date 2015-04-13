@@ -11,6 +11,8 @@
 #include <math.h>
 #include "Core.h"
 
+DWORD GCRCTable[] = {1, 0, 0};
+
 void __Context::StaticInit()
 {
 	
@@ -37,7 +39,7 @@ void appExit()
  Logging and critical errors.
  -----------------------------------------------------------------------------*/
 
-void appRequestExit( UBOOL Force );
+void appRequestExit( UBOOL Force ) {}
 
 void appFailAssert( const ANSICHAR* Expr, const ANSICHAR* File, INT Line )
 {
@@ -210,11 +212,11 @@ INT appStrncmp( const TCHAR* String1, const TCHAR* String2, INT Count )
 
 TCHAR* appStaticString1024()
 {
-	return "";
+	return NULL;
 }
 ANSICHAR* appAnsiStaticString1024()
 {
-	return "";
+	return NULL;
 }
 
 const TCHAR* appSpc( int Num )
@@ -232,10 +234,20 @@ TCHAR* appStrncat( TCHAR* Dest, const TCHAR* Src, int Max)
 	return strncat(Dest, Src, Max);
 }
 
+#include <ctype.h>
+
+/// This function is not present on OS X.
+char *strupr(char *s) {
+	unsigned c;
+	unsigned char *p = (unsigned char *)s;
+	while ((c = *p))
+		*p++ = toupper(c);
+	return s;
+}
+
 TCHAR* appStrupr( TCHAR* String )
 {
-	return "";
-	//return strupr(String);
+	return strupr(String);
 }
 
 const TCHAR* appStrfind(const TCHAR* Str, const TCHAR* Find)
@@ -293,11 +305,6 @@ void appMemcpy( void* Dest, const void* Src, INT Count )
 	memcpy(Dest, Src, Count);
 }
 
-
-UBOOL ParseParam( const TCHAR* Stream, const TCHAR* Param )
-{
-	return 0;
-}
 
 const TCHAR* appCmdLine()
 {
@@ -404,3 +411,34 @@ void appSleep( FLOAT Seconds ) {}
 
 DWORD appCycles() {return 0;}
 UBOOL ParseCommand( const TCHAR** Stream, const TCHAR* Match ) {return 0;}
+
+const TCHAR* appTimestamp() {return NULL;}
+UBOOL appLoadFileToArray( TArray<BYTE>& Result, const TCHAR* Filename, FFileManager* FileManager ) {return 0;}
+UBOOL appLoadFileToString( FString& Result, const TCHAR* Filename, FFileManager* FileManager ) {return 0;}
+UBOOL appSaveArrayToFile( const TArray<BYTE>& Array, const TCHAR* Filename, FFileManager* FileManager ) {return 0;}
+UBOOL appSaveStringToFile( const FString& String, const TCHAR* Filename, FFileManager* FileManager ) {return 0;}
+
+UBOOL Parse( const TCHAR* Stream, const TCHAR* Match, class FName& Name ) {return 0;}
+UBOOL Parse( const TCHAR* Stream, const TCHAR* Match, DWORD& Value ) {return 0;}
+UBOOL Parse( const TCHAR* Stream, const TCHAR* Match, class FGuid& Guid ) {return 0;}
+UBOOL Parse( const TCHAR* Stream, const TCHAR* Match, TCHAR* Value, INT MaxLen ) {return 0;}
+UBOOL Parse( const TCHAR* Stream, const TCHAR* Match, BYTE& Value ) {return 0;}
+UBOOL Parse( const TCHAR* Stream, const TCHAR* Match, SBYTE& Value ) {return 0;}
+UBOOL Parse( const TCHAR* Stream, const TCHAR* Match, _WORD& Value ) {return 0;}
+UBOOL Parse( const TCHAR* Stream, const TCHAR* Match, SWORD& Value ) {return 0;}
+UBOOL Parse( const TCHAR* Stream, const TCHAR* Match, FLOAT& Value ) {return 0;}
+UBOOL Parse( const TCHAR* Stream, const TCHAR* Match, INT& Value ) {return 0;}
+UBOOL Parse( const TCHAR* Stream, const TCHAR* Match, FString& Value ) {return 0;}
+UBOOL Parse( const TCHAR* Stream, const TCHAR* Match, QWORD& Value ) {return 0;}
+UBOOL Parse( const TCHAR* Stream, const TCHAR* Match, SQWORD& Value ) {return 0;}
+
+UBOOL ParseUBOOL( const TCHAR* Stream, const TCHAR* Match, UBOOL& OnOff ) {return 0;}
+UBOOL ParseObject( const TCHAR* Stream, const TCHAR* Match, class UClass* Type, class UObject*& DestRes, class UObject* InParent ) {return 0;}
+UBOOL ParseLine( const TCHAR** Stream, TCHAR* Result, INT MaxLen, UBOOL Exact ) {return 0;}
+UBOOL ParseLine( const TCHAR** Stream, FString& Resultd, UBOOL Exact ) {return 0;}
+UBOOL ParseToken( const TCHAR*& Str, TCHAR* Result, INT MaxLen, UBOOL UseEscape ) {return 0;}
+UBOOL ParseToken( const TCHAR*& Str, FString& Arg, UBOOL UseEscape ) {return 0;}
+FString ParseToken( const TCHAR*& Str, UBOOL UseEscape ) {return "";}
+void ParseNext( const TCHAR** Stream ) {}
+UBOOL ParseParam( const TCHAR* Stream, const TCHAR* Param ) {return 0;}
+

@@ -20,3 +20,12 @@ void FArray::Realloc( INT ElementSize )
 	
 }
 
+FString FString::Printf( const TCHAR* Fmt, ... )
+{
+	va_list list;
+	char tmpString[4096] = {0};
+	va_start(list, Fmt);
+	vsnprintf(tmpString, sizeof(tmpString) - 1, Fmt, list);
+	va_end(list);
+	return tmpString;
+}

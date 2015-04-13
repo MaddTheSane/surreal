@@ -79,7 +79,7 @@ static alureStream *InitStream(alureStream *instream, ALsizei chunkLength, ALsiz
             SetError("Chunk length too large");
             return NULL;
         }
-        chunkLength = len64;
+        chunkLength = (ALsizei)len64;
     }
 
     chunkLength -= chunkLength%blockAlign;

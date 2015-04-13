@@ -225,8 +225,8 @@ void USDLClient::Tick()
 {
 	guard(USDLClient::Tick);
 	INT i;
-	USDLViewport* Viewport;
-	EInputKey Key, InputKey;
+	USDLViewport* Viewport = NULL;
+	EInputKey Key=IK_None, InputKey=IK_None;
 	EInputAction Action;
 
 	SDL_Event Event;

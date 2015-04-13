@@ -959,7 +959,7 @@ class USDLGLRenderDevice : public URenderDevice
 				Ptr += NameCount;
 				(void)MaxDepth;
 			}
-			for( i=0; i<4; i++ )
+			for(int i=0; i<4; i++ )
 				glDisable( (GLenum) (GL_CLIP_PLANE0+i) );
 		}
 		unguard;

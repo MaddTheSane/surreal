@@ -6,6 +6,24 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		55AA38471ADC53B600D7F1A1 /* Surreal-backends */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 55AA38481ADC53B600D7F1A1 /* Build configuration list for PBXAggregateTarget "Surreal-backends" */;
+			buildPhases = (
+			);
+			dependencies = (
+				55AA384C1ADC53CE00D7F1A1 /* PBXTargetDependency */,
+				55AA384E1ADC53CE00D7F1A1 /* PBXTargetDependency */,
+				55AA38501ADC53CE00D7F1A1 /* PBXTargetDependency */,
+				55AA38521ADC53CE00D7F1A1 /* PBXTargetDependency */,
+				55AA38541ADC53CE00D7F1A1 /* PBXTargetDependency */,
+			);
+			name = "Surreal-backends";
+			productName = "Surreal-backends";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		551229D519462EA5000BFC2B /* libalure.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F1470F19460F20006E4D16 /* libalure.a */; };
 		551229D919462EAF000BFC2B /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551229D719462EAF000BFC2B /* OpenAL.framework */; };
@@ -152,7 +170,6 @@
 		551F43B6196A351200610BC4 /* UnType.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 551F43B5196A351200610BC4 /* UnType.cpp */; };
 		551F43B8196A3FA900610BC4 /* UnCorObj.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 551F43B7196A3FA900610BC4 /* UnCorObj.cpp */; };
 		5570222F1969FD02004B7637 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F13BAC194609DB006E4D16 /* Cocoa.framework */; };
-		557022351969FD02004B7637 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 557022331969FD02004B7637 /* InfoPlist.strings */; };
 		5570223B1969FD30004B7637 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551229E119462ECF000BFC2B /* SDL2.framework */; };
 		5570223C1969FDA9004B7637 /* SDLClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55122A3F19463168000BFC2B /* SDLClient.cpp */; };
 		5570223D1969FDAD004B7637 /* SDLDrv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55122A4019463168000BFC2B /* SDLDrv.cpp */; };
@@ -176,6 +193,24 @@
 		55A32C3B1ADB41AF00608626 /* libEngine.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 55702243196A0055004B7637 /* libEngine.dylib */; };
 		55A32C3C1ADB41C300608626 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551229E119462ECF000BFC2B /* SDL2.framework */; };
 		55A32C3E1ADB44A100608626 /* UnTex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55A32C3D1ADB44A100608626 /* UnTex.cpp */; };
+		55AA37F41ADC3EC500D7F1A1 /* SDLGL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55AA37EF1ADC3EC500D7F1A1 /* SDLGL.cpp */; };
+		55AA37F51ADC3EC500D7F1A1 /* SDLGLDrv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55AA37F01ADC3EC500D7F1A1 /* SDLGLDrv.cpp */; };
+		55AA37F61ADC3EC500D7F1A1 /* SDLGLDrv.h in Headers */ = {isa = PBXBuildFile; fileRef = 55AA37F11ADC3EC500D7F1A1 /* SDLGLDrv.h */; };
+		55AA37F71ADC3EC500D7F1A1 /* SDLGLFuncs.h in Headers */ = {isa = PBXBuildFile; fileRef = 55AA37F21ADC3EC500D7F1A1 /* SDLGLFuncs.h */; };
+		55AA37F81ADC3F0300D7F1A1 /* libCore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 551F4329196A0AAD00610BC4 /* libCore.dylib */; };
+		55AA37F91ADC3F0300D7F1A1 /* libEngine.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 55702243196A0055004B7637 /* libEngine.dylib */; };
+		55AA37FE1ADC3F2500D7F1A1 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551229E119462ECF000BFC2B /* SDL2.framework */; };
+		55AA38121ADC40D200D7F1A1 /* SDLLaunch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55AA38101ADC40D200D7F1A1 /* SDLLaunch.cpp */; };
+		55AA38171ADC410C00D7F1A1 /* libCore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 551F4329196A0AAD00610BC4 /* libCore.dylib */; };
+		55AA38181ADC410C00D7F1A1 /* libEngine.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 55702243196A0055004B7637 /* libEngine.dylib */; };
+		55AA38191ADC411100D7F1A1 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551229E119462ECF000BFC2B /* SDL2.framework */; };
+		55AA381B1ADC426000D7F1A1 /* UnGnuG.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55AA381A1ADC426000D7F1A1 /* UnGnuG.cpp */; };
+		55AA381D1ADC449600D7F1A1 /* UnGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55AA381C1ADC449600D7F1A1 /* UnGame.cpp */; };
+		55AA381F1ADC45D100D7F1A1 /* UnEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55AA381E1ADC45D100D7F1A1 /* UnEngine.cpp */; };
+		55AA38211ADC488D00D7F1A1 /* UnURL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55AA38201ADC488D00D7F1A1 /* UnURL.cpp */; };
+		55AA38331ADC4BEC00D7F1A1 /* UCC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55AA38311ADC4BEC00D7F1A1 /* UCC.cpp */; };
+		55AA38381ADC4C7600D7F1A1 /* libCore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 551F4329196A0AAD00610BC4 /* libCore.dylib */; };
+		55AA38391ADC4C7600D7F1A1 /* libEngine.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 55702243196A0055004B7637 /* libEngine.dylib */; };
 		55F13BAD194609DB006E4D16 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F13BAC194609DB006E4D16 /* Cocoa.framework */; };
 		55F13BB7194609DB006E4D16 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 55F13BB5194609DB006E4D16 /* InfoPlist.strings */; };
 		55F13BB9194609DB006E4D16 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F13BB8194609DB006E4D16 /* main.m */; };
@@ -253,6 +288,83 @@
 			remoteGlobalIDString = 55702242196A0055004B7637;
 			remoteInfo = Engine;
 		};
+		55AA37FA1ADC3F0800D7F1A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55F13BA1194609DB006E4D16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 551F42E8196A0AAD00610BC4;
+			remoteInfo = Core;
+		};
+		55AA37FC1ADC3F0800D7F1A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55F13BA1194609DB006E4D16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55702242196A0055004B7637;
+			remoteInfo = Engine;
+		};
+		55AA38131ADC410400D7F1A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55F13BA1194609DB006E4D16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 551F42E8196A0AAD00610BC4;
+			remoteInfo = Core;
+		};
+		55AA38151ADC410400D7F1A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55F13BA1194609DB006E4D16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55702242196A0055004B7637;
+			remoteInfo = Engine;
+		};
+		55AA38341ADC4C7000D7F1A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55F13BA1194609DB006E4D16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 551F42E8196A0AAD00610BC4;
+			remoteInfo = Core;
+		};
+		55AA38361ADC4C7000D7F1A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55F13BA1194609DB006E4D16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55702242196A0055004B7637;
+			remoteInfo = Engine;
+		};
+		55AA384B1ADC53CE00D7F1A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55F13BA1194609DB006E4D16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5570222D1969FD02004B7637;
+			remoteInfo = SDLDrv;
+		};
+		55AA384D1ADC53CE00D7F1A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55F13BA1194609DB006E4D16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55A32C111ADB36DB00608626;
+			remoteInfo = ALAudio;
+		};
+		55AA384F1ADC53CE00D7F1A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55F13BA1194609DB006E4D16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55A32C2E1ADB413400608626;
+			remoteInfo = OpenGLDrv;
+		};
+		55AA38511ADC53CE00D7F1A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55F13BA1194609DB006E4D16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55AA38021ADC40B000D7F1A1;
+			remoteInfo = SDLLaunch;
+		};
+		55AA38531ADC53CE00D7F1A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55F13BA1194609DB006E4D16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55AA38251ADC4BC200D7F1A1;
+			remoteInfo = UCC;
+		};
 		55F1470419460E66006E4D16 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 55F13D1C19460D44006E4D16 /* libmikmod.xcodeproj */;
@@ -275,6 +387,27 @@
 			remoteInfo = "CoreAudio Static Library";
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		55AA38011ADC40B000D7F1A1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		55AA38241ADC4BC200D7F1A1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		551229D719462EAF000BFC2B /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
@@ -368,9 +501,7 @@
 		551F43B3196A2DFA00610BC4 /* UnPlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UnPlayer.cpp; sourceTree = "<group>"; };
 		551F43B5196A351200610BC4 /* UnType.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UnType.cpp; sourceTree = "<group>"; };
 		551F43B7196A3FA900610BC4 /* UnCorObj.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UnCorObj.cpp; sourceTree = "<group>"; };
-		5570222E1969FD02004B7637 /* SDLDrv.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SDLDrv.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		557022321969FD02004B7637 /* SDLDrv-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SDLDrv-Info.plist"; sourceTree = "<group>"; };
-		557022341969FD02004B7637 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5570222E1969FD02004B7637 /* libSDLDrv.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libSDLDrv.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		55702243196A0055004B7637 /* libEngine.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libEngine.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		55A32C0C1ADB33F200608626 /* UnRenDev.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UnRenDev.cpp; sourceTree = "<group>"; };
 		55A32C121ADB36DB00608626 /* libALAudio.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libALAudio.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -378,6 +509,20 @@
 		55A32C291ADB3EE400608626 /* UnArc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UnArc.cpp; sourceTree = "<group>"; };
 		55A32C2F1ADB413400608626 /* libOpenGLDrv.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libOpenGLDrv.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		55A32C3D1ADB44A100608626 /* UnTex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UnTex.cpp; sourceTree = "<group>"; };
+		55AA37E81ADC3E6A00D7F1A1 /* libSDLGLDrv.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libSDLGLDrv.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		55AA37EF1ADC3EC500D7F1A1 /* SDLGL.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SDLGL.cpp; sourceTree = "<group>"; };
+		55AA37F01ADC3EC500D7F1A1 /* SDLGLDrv.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SDLGLDrv.cpp; sourceTree = "<group>"; };
+		55AA37F11ADC3EC500D7F1A1 /* SDLGLDrv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDLGLDrv.h; sourceTree = "<group>"; };
+		55AA37F21ADC3EC500D7F1A1 /* SDLGLFuncs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDLGLFuncs.h; sourceTree = "<group>"; };
+		55AA38031ADC40B000D7F1A1 /* SDLLaunch */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SDLLaunch; sourceTree = BUILT_PRODUCTS_DIR; };
+		55AA38101ADC40D200D7F1A1 /* SDLLaunch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SDLLaunch.cpp; sourceTree = "<group>"; };
+		55AA38111ADC40D200D7F1A1 /* SDLLaunchPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDLLaunchPrivate.h; sourceTree = "<group>"; };
+		55AA381A1ADC426000D7F1A1 /* UnGnuG.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UnGnuG.cpp; sourceTree = "<group>"; };
+		55AA381C1ADC449600D7F1A1 /* UnGame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UnGame.cpp; sourceTree = "<group>"; };
+		55AA381E1ADC45D100D7F1A1 /* UnEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UnEngine.cpp; sourceTree = "<group>"; };
+		55AA38201ADC488D00D7F1A1 /* UnURL.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UnURL.cpp; sourceTree = "<group>"; };
+		55AA38261ADC4BC200D7F1A1 /* UCC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = UCC; sourceTree = BUILT_PRODUCTS_DIR; };
+		55AA38311ADC4BEC00D7F1A1 /* UCC.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UCC.cpp; sourceTree = "<group>"; };
 		55F13BA9194609DB006E4D16 /* Surreal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Surreal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55F13BAC194609DB006E4D16 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		55F13BAF194609DB006E4D16 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -555,6 +700,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		55AA37E51ADC3E6A00D7F1A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55AA37FE1ADC3F2500D7F1A1 /* SDL2.framework in Frameworks */,
+				55AA37F81ADC3F0300D7F1A1 /* libCore.dylib in Frameworks */,
+				55AA37F91ADC3F0300D7F1A1 /* libEngine.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55AA38001ADC40B000D7F1A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55AA38191ADC411100D7F1A1 /* SDL2.framework in Frameworks */,
+				55AA38171ADC410C00D7F1A1 /* libCore.dylib in Frameworks */,
+				55AA38181ADC410C00D7F1A1 /* libEngine.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55AA38231ADC4BC200D7F1A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55AA38381ADC4C7600D7F1A1 /* libCore.dylib in Frameworks */,
+				55AA38391ADC4C7600D7F1A1 /* libEngine.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		55F13BA6194609DB006E4D16 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -715,6 +889,9 @@
 				55A32C0C1ADB33F200608626 /* UnRenDev.cpp */,
 				55A32C271ADB39F400608626 /* UnAudio.cpp */,
 				55A32C3D1ADB44A100608626 /* UnTex.cpp */,
+				55AA381C1ADC449600D7F1A1 /* UnGame.cpp */,
+				55AA381E1ADC45D100D7F1A1 /* UnEngine.cpp */,
+				55AA38201ADC488D00D7F1A1 /* UnURL.cpp */,
 			);
 			name = Stubs;
 			path = ../OSX/Stubs/Engine;
@@ -734,33 +911,69 @@
 				551F43B5196A351200610BC4 /* UnType.cpp */,
 				551F43B7196A3FA900610BC4 /* UnCorObj.cpp */,
 				55A32C291ADB3EE400608626 /* UnArc.cpp */,
+				55AA381A1ADC426000D7F1A1 /* UnGnuG.cpp */,
 			);
 			name = Stubs;
 			path = ../OSX/Stubs/Core;
 			sourceTree = "<group>";
 		};
-		557022301969FD02004B7637 /* SDLDrv */ = {
+		55AA37EC1ADC3EC500D7F1A1 /* SDLGLDrv */ = {
 			isa = PBXGroup;
 			children = (
-				557022311969FD02004B7637 /* Supporting Files */,
+				55AA37ED1ADC3EC500D7F1A1 /* Src */,
 			);
-			path = SDLDrv;
+			path = SDLGLDrv;
+			sourceTree = SOURCE_ROOT;
+		};
+		55AA37ED1ADC3EC500D7F1A1 /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				55AA37F21ADC3EC500D7F1A1 /* SDLGLFuncs.h */,
+				55AA37EF1ADC3EC500D7F1A1 /* SDLGL.cpp */,
+				55AA37F11ADC3EC500D7F1A1 /* SDLGLDrv.h */,
+				55AA37F01ADC3EC500D7F1A1 /* SDLGLDrv.cpp */,
+			);
+			path = Src;
 			sourceTree = "<group>";
 		};
-		557022311969FD02004B7637 /* Supporting Files */ = {
+		55AA380A1ADC40D200D7F1A1 /* SDLLaunch */ = {
 			isa = PBXGroup;
 			children = (
-				557022321969FD02004B7637 /* SDLDrv-Info.plist */,
-				557022331969FD02004B7637 /* InfoPlist.strings */,
+				55AA380F1ADC40D200D7F1A1 /* Src */,
 			);
-			name = "Supporting Files";
+			path = SDLLaunch;
+			sourceTree = SOURCE_ROOT;
+		};
+		55AA380F1ADC40D200D7F1A1 /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				55AA38101ADC40D200D7F1A1 /* SDLLaunch.cpp */,
+				55AA38111ADC40D200D7F1A1 /* SDLLaunchPrivate.h */,
+			);
+			path = Src;
+			sourceTree = "<group>";
+		};
+		55AA382D1ADC4BEC00D7F1A1 /* UCC */ = {
+			isa = PBXGroup;
+			children = (
+				55AA382F1ADC4BEC00D7F1A1 /* Src */,
+			);
+			path = UCC;
+			sourceTree = "<group>";
+		};
+		55AA382F1ADC4BEC00D7F1A1 /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				55AA38311ADC4BEC00D7F1A1 /* UCC.cpp */,
+			);
+			path = Src;
 			sourceTree = "<group>";
 		};
 		55F13BA0194609DB006E4D16 = {
 			isa = PBXGroup;
 			children = (
 				55F13BB2194609DB006E4D16 /* Surreal */,
-				557022301969FD02004B7637 /* SDLDrv */,
+				55AA382D1ADC4BEC00D7F1A1 /* UCC */,
 				55F13BAB194609DB006E4D16 /* Frameworks */,
 				55F13BAA194609DB006E4D16 /* Products */,
 			);
@@ -771,11 +984,14 @@
 			children = (
 				55F13BA9194609DB006E4D16 /* Surreal.app */,
 				55F1470F19460F20006E4D16 /* libalure.a */,
-				5570222E1969FD02004B7637 /* SDLDrv.bundle */,
+				5570222E1969FD02004B7637 /* libSDLDrv.dylib */,
 				55702243196A0055004B7637 /* libEngine.dylib */,
 				551F4329196A0AAD00610BC4 /* libCore.dylib */,
 				55A32C121ADB36DB00608626 /* libALAudio.dylib */,
 				55A32C2F1ADB413400608626 /* libOpenGLDrv.dylib */,
+				55AA37E81ADC3E6A00D7F1A1 /* libSDLGLDrv.dylib */,
+				55AA38031ADC40B000D7F1A1 /* SDLLaunch */,
+				55AA38261ADC4BC200D7F1A1 /* UCC */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -814,6 +1030,8 @@
 				55F13C2C19460D44006E4D16 /* Deps */,
 				55F13BE519460ACD006E4D16 /* ALAudio */,
 				55122A3619463168000BFC2B /* SDLDrv */,
+				55AA37EC1ADC3EC500D7F1A1 /* SDLGLDrv */,
+				55AA380A1ADC40D200D7F1A1 /* SDLLaunch */,
 				55122A47194631AF000BFC2B /* OpenGLDrv */,
 				55F13BBE194609DB006E4D16 /* AppDelegate.h */,
 				55F13BBF194609DB006E4D16 /* AppDelegate.m */,
@@ -1283,6 +1501,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		55AA37E61ADC3E6A00D7F1A1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55AA37F61ADC3EC500D7F1A1 /* SDLGLDrv.h in Headers */,
+				55AA37F71ADC3EC500D7F1A1 /* SDLGLFuncs.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		55F1470D19460F20006E4D16 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -1316,7 +1543,6 @@
 			buildPhases = (
 				5570222A1969FD02004B7637 /* Sources */,
 				5570222B1969FD02004B7637 /* Frameworks */,
-				5570222C1969FD02004B7637 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -1326,8 +1552,8 @@
 			);
 			name = SDLDrv;
 			productName = SDLDrv;
-			productReference = 5570222E1969FD02004B7637 /* SDLDrv.bundle */;
-			productType = "com.apple.product-type.bundle";
+			productReference = 5570222E1969FD02004B7637 /* libSDLDrv.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
 		};
 		55702242196A0055004B7637 /* Engine */ = {
 			isa = PBXNativeTarget;
@@ -1387,6 +1613,63 @@
 			productReference = 55A32C2F1ADB413400608626 /* libOpenGLDrv.dylib */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
+		55AA37E71ADC3E6A00D7F1A1 /* SDLGLDrv */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55AA37E91ADC3E6A00D7F1A1 /* Build configuration list for PBXNativeTarget "SDLGLDrv" */;
+			buildPhases = (
+				55AA37E41ADC3E6A00D7F1A1 /* Sources */,
+				55AA37E51ADC3E6A00D7F1A1 /* Frameworks */,
+				55AA37E61ADC3E6A00D7F1A1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55AA37FB1ADC3F0800D7F1A1 /* PBXTargetDependency */,
+				55AA37FD1ADC3F0800D7F1A1 /* PBXTargetDependency */,
+			);
+			name = SDLGLDrv;
+			productName = SDLGLDrv;
+			productReference = 55AA37E81ADC3E6A00D7F1A1 /* libSDLGLDrv.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		55AA38021ADC40B000D7F1A1 /* SDLLaunch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55AA38071ADC40B100D7F1A1 /* Build configuration list for PBXNativeTarget "SDLLaunch" */;
+			buildPhases = (
+				55AA37FF1ADC40B000D7F1A1 /* Sources */,
+				55AA38001ADC40B000D7F1A1 /* Frameworks */,
+				55AA38011ADC40B000D7F1A1 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55AA38141ADC410400D7F1A1 /* PBXTargetDependency */,
+				55AA38161ADC410400D7F1A1 /* PBXTargetDependency */,
+			);
+			name = SDLLaunch;
+			productName = SDLLaunch1;
+			productReference = 55AA38031ADC40B000D7F1A1 /* SDLLaunch */;
+			productType = "com.apple.product-type.tool";
+		};
+		55AA38251ADC4BC200D7F1A1 /* UCC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55AA382A1ADC4BC200D7F1A1 /* Build configuration list for PBXNativeTarget "UCC" */;
+			buildPhases = (
+				55AA38221ADC4BC200D7F1A1 /* Sources */,
+				55AA38231ADC4BC200D7F1A1 /* Frameworks */,
+				55AA38241ADC4BC200D7F1A1 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55AA38351ADC4C7000D7F1A1 /* PBXTargetDependency */,
+				55AA38371ADC4C7000D7F1A1 /* PBXTargetDependency */,
+			);
+			name = UCC;
+			productName = UCC1;
+			productReference = 55AA38261ADC4BC200D7F1A1 /* UCC */;
+			productType = "com.apple.product-type.tool";
+		};
 		55F13BA8194609DB006E4D16 /* Surreal */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 55F13BDA194609DB006E4D16 /* Build configuration list for PBXNativeTarget "Surreal" */;
@@ -1437,6 +1720,18 @@
 					55A32C2E1ADB413400608626 = {
 						CreatedOnToolsVersion = 6.3;
 					};
+					55AA37E71ADC3E6A00D7F1A1 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					55AA38021ADC40B000D7F1A1 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					55AA38251ADC4BC200D7F1A1 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					55AA38471ADC53B600D7F1A1 = {
+						CreatedOnToolsVersion = 6.3;
+					};
 				};
 			};
 			buildConfigurationList = 55F13BA4194609DB006E4D16 /* Build configuration list for PBXProject "Surreal" */;
@@ -1466,6 +1761,10 @@
 				55702242196A0055004B7637 /* Engine */,
 				55A32C111ADB36DB00608626 /* ALAudio */,
 				55A32C2E1ADB413400608626 /* OpenGLDrv */,
+				55AA37E71ADC3E6A00D7F1A1 /* SDLGLDrv */,
+				55AA38021ADC40B000D7F1A1 /* SDLLaunch */,
+				55AA38251ADC4BC200D7F1A1 /* UCC */,
+				55AA38471ADC53B600D7F1A1 /* Surreal-backends */,
 			);
 		};
 /* End PBXProject section */
@@ -1488,14 +1787,6 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5570222C1969FD02004B7637 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				557022351969FD02004B7637 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		55F13BA7194609DB006E4D16 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1521,6 +1812,7 @@
 				551F4336196A1A9400610BC4 /* UnName.cpp in Sources */,
 				551F4334196A12DD00610BC4 /* UnFile.cpp in Sources */,
 				55A32C2A1ADB3EE400608626 /* UnArc.cpp in Sources */,
+				55AA381B1ADC426000D7F1A1 /* UnGnuG.cpp in Sources */,
 				551F433A196A23F600610BC4 /* UnTemplate.cpp in Sources */,
 				551F4330196A0C4500610BC4 /* UnClass.cpp in Sources */,
 				551F4338196A1C3000610BC4 /* UnObjBas.cpp in Sources */,
@@ -1546,7 +1838,10 @@
 				55A32C0D1ADB33F200608626 /* UnRenDev.cpp in Sources */,
 				551F42E3196A098100610BC4 /* AActor.cpp in Sources */,
 				551F43B4196A2DFA00610BC4 /* UnPlayer.cpp in Sources */,
+				55AA38211ADC488D00D7F1A1 /* UnURL.cpp in Sources */,
 				55A32C3E1ADB44A100608626 /* UnTex.cpp in Sources */,
+				55AA381D1ADC449600D7F1A1 /* UnGame.cpp in Sources */,
+				55AA381F1ADC45D100D7F1A1 /* UnEngine.cpp in Sources */,
 				551F43AF196A280D00610BC4 /* UnCamera.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1568,6 +1863,31 @@
 				55A32C351ADB415500608626 /* OpenGLDrv.cpp in Sources */,
 				55A32C341ADB415100608626 /* OpenGL.cpp in Sources */,
 				55A32C331ADB414E00608626 /* c_gclip.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55AA37E41ADC3E6A00D7F1A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55AA37F51ADC3EC500D7F1A1 /* SDLGLDrv.cpp in Sources */,
+				55AA37F41ADC3EC500D7F1A1 /* SDLGL.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55AA37FF1ADC40B000D7F1A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55AA38121ADC40D200D7F1A1 /* SDLLaunch.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55AA38221ADC4BC200D7F1A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55AA38331ADC4BEC00D7F1A1 /* UCC.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1652,6 +1972,61 @@
 			target = 55702242196A0055004B7637 /* Engine */;
 			targetProxy = 55A32C381ADB41A600608626 /* PBXContainerItemProxy */;
 		};
+		55AA37FB1ADC3F0800D7F1A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 551F42E8196A0AAD00610BC4 /* Core */;
+			targetProxy = 55AA37FA1ADC3F0800D7F1A1 /* PBXContainerItemProxy */;
+		};
+		55AA37FD1ADC3F0800D7F1A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55702242196A0055004B7637 /* Engine */;
+			targetProxy = 55AA37FC1ADC3F0800D7F1A1 /* PBXContainerItemProxy */;
+		};
+		55AA38141ADC410400D7F1A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 551F42E8196A0AAD00610BC4 /* Core */;
+			targetProxy = 55AA38131ADC410400D7F1A1 /* PBXContainerItemProxy */;
+		};
+		55AA38161ADC410400D7F1A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55702242196A0055004B7637 /* Engine */;
+			targetProxy = 55AA38151ADC410400D7F1A1 /* PBXContainerItemProxy */;
+		};
+		55AA38351ADC4C7000D7F1A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 551F42E8196A0AAD00610BC4 /* Core */;
+			targetProxy = 55AA38341ADC4C7000D7F1A1 /* PBXContainerItemProxy */;
+		};
+		55AA38371ADC4C7000D7F1A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55702242196A0055004B7637 /* Engine */;
+			targetProxy = 55AA38361ADC4C7000D7F1A1 /* PBXContainerItemProxy */;
+		};
+		55AA384C1ADC53CE00D7F1A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5570222D1969FD02004B7637 /* SDLDrv */;
+			targetProxy = 55AA384B1ADC53CE00D7F1A1 /* PBXContainerItemProxy */;
+		};
+		55AA384E1ADC53CE00D7F1A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55A32C111ADB36DB00608626 /* ALAudio */;
+			targetProxy = 55AA384D1ADC53CE00D7F1A1 /* PBXContainerItemProxy */;
+		};
+		55AA38501ADC53CE00D7F1A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55A32C2E1ADB413400608626 /* OpenGLDrv */;
+			targetProxy = 55AA384F1ADC53CE00D7F1A1 /* PBXContainerItemProxy */;
+		};
+		55AA38521ADC53CE00D7F1A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55AA38021ADC40B000D7F1A1 /* SDLLaunch */;
+			targetProxy = 55AA38511ADC53CE00D7F1A1 /* PBXContainerItemProxy */;
+		};
+		55AA38541ADC53CE00D7F1A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55AA38251ADC4BC200D7F1A1 /* UCC */;
+			targetProxy = 55AA38531ADC53CE00D7F1A1 /* PBXContainerItemProxy */;
+		};
 		55F1470A19460EC5006E4D16 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "CoreAudio Static Library";
@@ -1660,14 +2035,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		557022331969FD02004B7637 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				557022341969FD02004B7637 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		55F13BB5194609DB006E4D16 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1726,7 +2093,7 @@
 		557022371969FD02004B7637 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
@@ -1745,22 +2112,19 @@
 					/Library/Frameworks/SDL2.framework/Headers,
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "SDLDrv/SDLDrv-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Core/Lib",
 					"$(PROJECT_DIR)/Engine/Lib",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
 		};
 		557022381969FD02004B7637 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
@@ -1779,15 +2143,12 @@
 					/Library/Frameworks/SDL2.framework/Headers,
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "SDLDrv/SDLDrv-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Core/Lib",
 					"$(PROJECT_DIR)/Engine/Lib",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -1822,7 +2183,6 @@
 		55A32C141ADB36DB00608626 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				EXECUTABLE_PREFIX = lib;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1840,7 +2200,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				EXECUTABLE_PREFIX = lib;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1857,7 +2216,6 @@
 		55A32C311ADB413400608626 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				EXECUTABLE_PREFIX = lib;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1882,7 +2240,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				EXECUTABLE_PREFIX = lib;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1899,6 +2256,141 @@
 					"$(inherited)",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		55AA37EA1ADC3E6A00D7F1A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"GPackage=GPackageSDLGLDrv",
+					UTGLR_NO_APP_MALLOC,
+					UTGLR_UT_BUILD,
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		55AA37EB1ADC3E6A00D7F1A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"GPackage=GPackageSDLGLDrv",
+					UTGLR_NO_APP_MALLOC,
+					UTGLR_UT_BUILD,
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		55AA38081ADC40B100D7F1A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					UTGLR_NO_APP_MALLOC,
+					UTGLR_UT_BUILD,
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					/Library/Frameworks/SDL2.framework/Headers,
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		55AA38091ADC40B100D7F1A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					UTGLR_NO_APP_MALLOC,
+					UTGLR_UT_BUILD,
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					/Library/Frameworks/SDL2.framework/Headers,
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		55AA382B1ADC4BC200D7F1A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"GPackage=GPackageUCC",
+					UTGLR_NO_APP_MALLOC,
+					UTGLR_UT_BUILD,
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		55AA382C1ADC4BC200D7F1A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"GPackage=GPackageUCC",
+					UTGLR_NO_APP_MALLOC,
+					UTGLR_UT_BUILD,
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		55AA38491ADC53B600D7F1A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		55AA384A1ADC53B600D7F1A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -1923,6 +2415,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -1967,6 +2460,7 @@
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -2113,12 +2607,49 @@
 				55A32C151ADB36DB00608626 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		55A32C301ADB413400608626 /* Build configuration list for PBXNativeTarget "OpenGLDrv" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				55A32C311ADB413400608626 /* Debug */,
 				55A32C321ADB413400608626 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55AA37E91ADC3E6A00D7F1A1 /* Build configuration list for PBXNativeTarget "SDLGLDrv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55AA37EA1ADC3E6A00D7F1A1 /* Debug */,
+				55AA37EB1ADC3E6A00D7F1A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55AA38071ADC40B100D7F1A1 /* Build configuration list for PBXNativeTarget "SDLLaunch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55AA38081ADC40B100D7F1A1 /* Debug */,
+				55AA38091ADC40B100D7F1A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55AA382A1ADC4BC200D7F1A1 /* Build configuration list for PBXNativeTarget "UCC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55AA382B1ADC4BC200D7F1A1 /* Debug */,
+				55AA382C1ADC4BC200D7F1A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55AA38481ADC53B600D7F1A1 /* Build configuration list for PBXAggregateTarget "Surreal-backends" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55AA38491ADC53B600D7F1A1 /* Debug */,
+				55AA384A1ADC53B600D7F1A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
