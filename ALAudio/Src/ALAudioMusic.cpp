@@ -200,7 +200,6 @@ static void UnMM_Update()
 	Driver definition
 ------------------------------------------------------------------------------------*/
 
-
 MDRIVER MusicDriver = {
 	NULL,
 	"Unreal OpenAL",
