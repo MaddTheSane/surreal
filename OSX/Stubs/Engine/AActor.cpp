@@ -9,6 +9,7 @@
 #include <stdlib.h>
 #include "Engine.h"
 
+IMPLEMENT_CLASS(AActor);
 void AActor::Destroy()
 {
 	

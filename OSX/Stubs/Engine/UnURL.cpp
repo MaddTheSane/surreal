@@ -26,3 +26,17 @@ INT FURL::DefaultPort = 0;
 FURL::FURL( const TCHAR* Filename ) {}
 FURL::FURL( FURL* Base, const TCHAR* TextURL, ETravelType Type ) {}
 
+void FURL::StaticInit() {}
+void FURL::StaticExit() {}
+
+// Functions.
+UBOOL FURL::IsInternal() const {return 0;};
+UBOOL FURL::IsLocalInternal() const {return 0;}
+UBOOL FURL::HasOption( const TCHAR* Test ) const {return 0;}
+const TCHAR* FURL::GetOption( const TCHAR* Match, const TCHAR* Default ) const {return "";}
+void FURL::LoadURLConfig( const TCHAR* Section, const TCHAR* Filename ) {}
+void FURL::SaveURLConfig( const TCHAR* Section, const TCHAR* Item, const TCHAR* Filename ) const {}
+void FURL::AddOption( const TCHAR* Str ) {}
+FString FURL::String( UBOOL FullyQualified ) const {return "";}
+
+UBOOL FURL::operator==( const FURL& Other ) const {return false;}

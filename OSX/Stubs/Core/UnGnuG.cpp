@@ -13,11 +13,11 @@
 ANSICHAR GModule[32] = "";
 
 
-HINSTANCE      hInstance;
+HINSTANCE      hInstance = 0;
 UBOOL GIsMMX = 1;
 UBOOL GIsPentiumPro = 1;
 UBOOL GIsKatmai = 1;
-UBOOL GIsK6 = 0;
-UBOOL GIs3DNow = 0;
-UBOOL GTimestamp = 0;
+UBOOL GIsK6 = false;
+UBOOL GIs3DNow = false;
+UBOOL GTimestamp = false;
 

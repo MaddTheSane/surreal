@@ -10,7 +10,6 @@
 #include "Engine.h"
 
 IMPLEMENT_CLASS(UClient);
-
 UClient::UClient()
 {
 	

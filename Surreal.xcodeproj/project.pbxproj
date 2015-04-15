@@ -211,6 +211,7 @@
 		55AA38331ADC4BEC00D7F1A1 /* UCC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55AA38311ADC4BEC00D7F1A1 /* UCC.cpp */; };
 		55AA38381ADC4C7600D7F1A1 /* libCore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 551F4329196A0AAD00610BC4 /* libCore.dylib */; };
 		55AA38391ADC4C7600D7F1A1 /* libEngine.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 55702243196A0055004B7637 /* libEngine.dylib */; };
+		55AA38561ADC927200D7F1A1 /* UnBits.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55AA38551ADC927200D7F1A1 /* UnBits.cpp */; };
 		55F13BAD194609DB006E4D16 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F13BAC194609DB006E4D16 /* Cocoa.framework */; };
 		55F13BB7194609DB006E4D16 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 55F13BB5194609DB006E4D16 /* InfoPlist.strings */; };
 		55F13BB9194609DB006E4D16 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F13BB8194609DB006E4D16 /* main.m */; };
@@ -523,6 +524,7 @@
 		55AA38201ADC488D00D7F1A1 /* UnURL.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UnURL.cpp; sourceTree = "<group>"; };
 		55AA38261ADC4BC200D7F1A1 /* UCC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = UCC; sourceTree = BUILT_PRODUCTS_DIR; };
 		55AA38311ADC4BEC00D7F1A1 /* UCC.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UCC.cpp; sourceTree = "<group>"; };
+		55AA38551ADC927200D7F1A1 /* UnBits.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UnBits.cpp; sourceTree = "<group>"; };
 		55F13BA9194609DB006E4D16 /* Surreal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Surreal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55F13BAC194609DB006E4D16 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		55F13BAF194609DB006E4D16 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -912,6 +914,7 @@
 				551F43B7196A3FA900610BC4 /* UnCorObj.cpp */,
 				55A32C291ADB3EE400608626 /* UnArc.cpp */,
 				55AA381A1ADC426000D7F1A1 /* UnGnuG.cpp */,
+				55AA38551ADC927200D7F1A1 /* UnBits.cpp */,
 			);
 			name = Stubs;
 			path = ../OSX/Stubs/Core;
@@ -1816,6 +1819,7 @@
 				551F433A196A23F600610BC4 /* UnTemplate.cpp in Sources */,
 				551F4330196A0C4500610BC4 /* UnClass.cpp in Sources */,
 				551F4338196A1C3000610BC4 /* UnObjBas.cpp in Sources */,
+				55AA38561ADC927200D7F1A1 /* UnBits.cpp in Sources */,
 				551F43B8196A3FA900610BC4 /* UnCorObj.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2191,6 +2195,14 @@
 					UTGLR_UT_BUILD,
 					"$(inherited)",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Core/Inc",
+					"$(PROJECT_DIR)/Deps/libmikmod/include",
+					"$(PROJECT_DIR)/Deps/libmikmod/macosx",
+					"$(PROJECT_DIR)/Deps/alure-gyp/include-mac",
+					/Library/Frameworks/SDL2.framework/Headers,
+					"$(inherited)",
+				);
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -2206,6 +2218,14 @@
 					"GPackage=GPackageALAudio",
 					UTGLR_NO_APP_MALLOC,
 					UTGLR_UT_BUILD,
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Core/Inc",
+					"$(PROJECT_DIR)/Deps/libmikmod/include",
+					"$(PROJECT_DIR)/Deps/libmikmod/macosx",
+					"$(PROJECT_DIR)/Deps/alure-gyp/include-mac",
+					/Library/Frameworks/SDL2.framework/Headers,
 					"$(inherited)",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -2276,7 +2296,6 @@
 					UTGLR_UT_BUILD,
 					"$(inherited)",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -2299,7 +2318,6 @@
 					UTGLR_UT_BUILD,
 					"$(inherited)",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -2321,7 +2339,6 @@
 					/Library/Frameworks/SDL2.framework/Headers,
 					"$(inherited)",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -2344,7 +2361,6 @@
 					/Library/Frameworks/SDL2.framework/Headers,
 					"$(inherited)",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -2359,7 +2375,6 @@
 					UTGLR_UT_BUILD,
 					"$(inherited)",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -2375,7 +2390,6 @@
 					UTGLR_UT_BUILD,
 					"$(inherited)",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -2464,7 +2478,10 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = "__STATIC_LINK=0";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"__STATIC_LINK=0",
+					"$(inherited)",
+				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -2652,6 +2669,7 @@
 				55AA384A1ADC53B600D7F1A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		55F13BA4194609DB006E4D16 /* Build configuration list for PBXProject "Surreal" */ = {
 			isa = XCConfigurationList;
