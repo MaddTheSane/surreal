@@ -163,11 +163,7 @@ typedef unsigned int		BITFIELD;	// For bitfields.
 #if __UNIX__
 #define LINE_TERMINATOR TEXT("\n")
 #define PATH_SEPARATOR TEXT("/")
-#if __MACH__
-#define DLLEXT TEXT(".dylib")
-#else
 #define DLLEXT TEXT(".so")
-#endif
 #else
 #define LINE_TERMINATOR TEXT("\r\n")
 #define PATH_SEPARATOR TEXT("\\")

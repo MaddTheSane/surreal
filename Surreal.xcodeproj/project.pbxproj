@@ -502,15 +502,15 @@
 		551F43B3196A2DFA00610BC4 /* UnPlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UnPlayer.cpp; sourceTree = "<group>"; };
 		551F43B5196A351200610BC4 /* UnType.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UnType.cpp; sourceTree = "<group>"; };
 		551F43B7196A3FA900610BC4 /* UnCorObj.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UnCorObj.cpp; sourceTree = "<group>"; };
-		5570222E1969FD02004B7637 /* libSDLDrv.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libSDLDrv.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		5570222E1969FD02004B7637 /* libSDLDrv.so */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libSDLDrv.so; sourceTree = BUILT_PRODUCTS_DIR; };
 		55702243196A0055004B7637 /* libEngine.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libEngine.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		55A32C0C1ADB33F200608626 /* UnRenDev.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UnRenDev.cpp; sourceTree = "<group>"; };
-		55A32C121ADB36DB00608626 /* libALAudio.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libALAudio.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		55A32C121ADB36DB00608626 /* libALAudio.so */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libALAudio.so; sourceTree = BUILT_PRODUCTS_DIR; };
 		55A32C271ADB39F400608626 /* UnAudio.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UnAudio.cpp; sourceTree = "<group>"; };
 		55A32C291ADB3EE400608626 /* UnArc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UnArc.cpp; sourceTree = "<group>"; };
-		55A32C2F1ADB413400608626 /* libOpenGLDrv.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libOpenGLDrv.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		55A32C2F1ADB413400608626 /* libOpenGLDrv.so */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libOpenGLDrv.so; sourceTree = BUILT_PRODUCTS_DIR; };
 		55A32C3D1ADB44A100608626 /* UnTex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UnTex.cpp; sourceTree = "<group>"; };
-		55AA37E81ADC3E6A00D7F1A1 /* libSDLGLDrv.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libSDLGLDrv.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		55AA37E81ADC3E6A00D7F1A1 /* libSDLGLDrv.so */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libSDLGLDrv.so; sourceTree = BUILT_PRODUCTS_DIR; };
 		55AA37EF1ADC3EC500D7F1A1 /* SDLGL.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SDLGL.cpp; sourceTree = "<group>"; };
 		55AA37F01ADC3EC500D7F1A1 /* SDLGLDrv.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SDLGLDrv.cpp; sourceTree = "<group>"; };
 		55AA37F11ADC3EC500D7F1A1 /* SDLGLDrv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDLGLDrv.h; sourceTree = "<group>"; };
@@ -987,12 +987,12 @@
 			children = (
 				55F13BA9194609DB006E4D16 /* Surreal.app */,
 				55F1470F19460F20006E4D16 /* libalure.a */,
-				5570222E1969FD02004B7637 /* libSDLDrv.dylib */,
+				5570222E1969FD02004B7637 /* libSDLDrv.so */,
 				55702243196A0055004B7637 /* libEngine.dylib */,
 				551F4329196A0AAD00610BC4 /* libCore.dylib */,
-				55A32C121ADB36DB00608626 /* libALAudio.dylib */,
-				55A32C2F1ADB413400608626 /* libOpenGLDrv.dylib */,
-				55AA37E81ADC3E6A00D7F1A1 /* libSDLGLDrv.dylib */,
+				55A32C121ADB36DB00608626 /* libALAudio.so */,
+				55A32C2F1ADB413400608626 /* libOpenGLDrv.so */,
+				55AA37E81ADC3E6A00D7F1A1 /* libSDLGLDrv.so */,
 				55AA38031ADC40B000D7F1A1 /* SDLLaunch */,
 				55AA38261ADC4BC200D7F1A1 /* UCC */,
 			);
@@ -1555,7 +1555,7 @@
 			);
 			name = SDLDrv;
 			productName = SDLDrv;
-			productReference = 5570222E1969FD02004B7637 /* libSDLDrv.dylib */;
+			productReference = 5570222E1969FD02004B7637 /* libSDLDrv.so */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
 		55702242196A0055004B7637 /* Engine */ = {
@@ -1594,7 +1594,7 @@
 			);
 			name = ALAudio;
 			productName = ALAudio;
-			productReference = 55A32C121ADB36DB00608626 /* libALAudio.dylib */;
+			productReference = 55A32C121ADB36DB00608626 /* libALAudio.so */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
 		55A32C2E1ADB413400608626 /* OpenGLDrv */ = {
@@ -1613,7 +1613,7 @@
 			);
 			name = OpenGLDrv;
 			productName = OpenGLDrv;
-			productReference = 55A32C2F1ADB413400608626 /* libOpenGLDrv.dylib */;
+			productReference = 55A32C2F1ADB413400608626 /* libOpenGLDrv.so */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
 		55AA37E71ADC3E6A00D7F1A1 /* SDLGLDrv */ = {
@@ -1632,7 +1632,7 @@
 			);
 			name = SDLGLDrv;
 			productName = SDLGLDrv;
-			productReference = 55AA37E81ADC3E6A00D7F1A1 /* libSDLGLDrv.dylib */;
+			productReference = 55AA37E81ADC3E6A00D7F1A1 /* libSDLGLDrv.so */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
 		55AA38021ADC40B000D7F1A1 /* SDLLaunch */ = {
@@ -1714,7 +1714,7 @@
 		55F13BA1194609DB006E4D16 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "C.W. Betts";
 				TargetAttributes = {
 					55A32C111ADB36DB00608626 = {
@@ -2097,6 +2097,7 @@
 		557022371969FD02004B7637 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				EXECUTABLE_EXTENSION = so;
 				EXECUTABLE_PREFIX = lib;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2128,6 +2129,7 @@
 		557022381969FD02004B7637 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				EXECUTABLE_EXTENSION = so;
 				EXECUTABLE_PREFIX = lib;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2187,6 +2189,7 @@
 		55A32C141ADB36DB00608626 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				EXECUTABLE_EXTENSION = so;
 				EXECUTABLE_PREFIX = lib;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -2212,6 +2215,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_EXTENSION = so;
 				EXECUTABLE_PREFIX = lib;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -2236,6 +2240,7 @@
 		55A32C311ADB413400608626 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				EXECUTABLE_EXTENSION = so;
 				EXECUTABLE_PREFIX = lib;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2260,6 +2265,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_EXTENSION = so;
 				EXECUTABLE_PREFIX = lib;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2285,6 +2291,7 @@
 			buildSettings = {
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_EXTENSION = so;
 				EXECUTABLE_PREFIX = lib;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2307,6 +2314,7 @@
 				COPY_PHASE_STRIP = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_EXTENSION = so;
 				EXECUTABLE_PREFIX = lib;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2430,6 +2438,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
