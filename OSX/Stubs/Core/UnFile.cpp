@@ -8,8 +8,9 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
+#include <cmath>
 #include "Core.h"
+#include <ctype.h>
 
 DWORD GCRCTable[] = {1, 0, 0};
 
@@ -234,8 +235,6 @@ TCHAR* appStrncat( TCHAR* Dest, const TCHAR* Src, int Max)
 	return strncat(Dest, Src, Max);
 }
 
-#include <ctype.h>
-
 /// This function is not present on OS X.
 char *strupr(char *s) {
 	unsigned c;
@@ -355,6 +354,8 @@ const TCHAR* LocalizeGeneral( const TCHAR* Key, const TCHAR* Package, const TCHA
 {
 	return NULL;
 }
+
+using namespace std;
 
 DOUBLE appSqrt( DOUBLE Value )
 {

@@ -4,9 +4,16 @@
 //  The contents of this file are implicitly included at the beginning of every source file.
 //
 
-#include "mikmod.h"
 #include <stdlib.h>
 
 #ifdef __OBJC__
+	#define FVector FVector_Carbon
 	#import <Cocoa/Cocoa.h>
+	#undef FVector
+#endif
+
+#ifdef __cplusplus
+#include <fcntl.h>
+#include "Engine.h"
+#include "UnRender.h"
 #endif

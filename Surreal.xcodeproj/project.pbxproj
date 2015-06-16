@@ -25,13 +25,6 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		551229D519462EA5000BFC2B /* libalure.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F1470F19460F20006E4D16 /* libalure.a */; };
-		551229D919462EAF000BFC2B /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551229D719462EAF000BFC2B /* OpenAL.framework */; };
-		551229DA19462EAF000BFC2B /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551229D819462EAF000BFC2B /* OpenGL.framework */; };
-		551229DE19462EBE000BFC2B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551229DB19462EBE000BFC2B /* AudioToolbox.framework */; };
-		551229DF19462EBE000BFC2B /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551229DC19462EBE000BFC2B /* AudioUnit.framework */; };
-		551229E019462EBE000BFC2B /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551229DD19462EBE000BFC2B /* CoreAudio.framework */; };
-		551229E219462ECF000BFC2B /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551229E119462ECF000BFC2B /* SDL2.framework */; };
 		551229E719462F9F000BFC2B /* alure.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55F13C6819460D44006E4D16 /* alure.cpp */; };
 		551229E819462F9F000BFC2B /* buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55F13C6919460D44006E4D16 /* buffer.cpp */; };
 		551229E919462F9F000BFC2B /* codec_aiff.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55F13C6A19460D44006E4D16 /* codec_aiff.cpp */; };
@@ -40,12 +33,6 @@
 		551229F319462F9F000BFC2B /* stream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55F13C7419460D44006E4D16 /* stream.cpp */; };
 		551229F419462F9F000BFC2B /* streamdec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55F13C7519460D44006E4D16 /* streamdec.cpp */; };
 		551229F519462F9F000BFC2B /* streamplay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55F13C7619460D44006E4D16 /* streamplay.cpp */; };
-		55122A4419463168000BFC2B /* SDLClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55122A3F19463168000BFC2B /* SDLClient.cpp */; };
-		55122A4519463168000BFC2B /* SDLDrv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55122A4019463168000BFC2B /* SDLDrv.cpp */; };
-		55122A4619463168000BFC2B /* SDLViewport.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55122A4119463168000BFC2B /* SDLViewport.cpp */; };
-		55122A55194631AF000BFC2B /* c_gclip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55122A4A194631AF000BFC2B /* c_gclip.cpp */; };
-		55122A57194631AF000BFC2B /* OpenGL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55122A4E194631AF000BFC2B /* OpenGL.cpp */; };
-		55122A58194631AF000BFC2B /* OpenGLDrv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55122A51194631AF000BFC2B /* OpenGLDrv.cpp */; };
 		551F42E3196A098100610BC4 /* AActor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 551F42E1196A091500610BC4 /* AActor.cpp */; };
 		551F432B196A0AF300610BC4 /* Core.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 551F432A196A0AF300610BC4 /* Core.cpp */; };
 		551F432C196A0B5900610BC4 /* libCore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 551F4329196A0AAD00610BC4 /* libCore.dylib */; };
@@ -212,17 +199,20 @@
 		55AA38381ADC4C7600D7F1A1 /* libCore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 551F4329196A0AAD00610BC4 /* libCore.dylib */; };
 		55AA38391ADC4C7600D7F1A1 /* libEngine.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 55702243196A0055004B7637 /* libEngine.dylib */; };
 		55AA38561ADC927200D7F1A1 /* UnBits.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55AA38551ADC927200D7F1A1 /* UnBits.cpp */; };
+		55CBB1021B30DCBA00DB43A9 /* libCore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 551F4329196A0AAD00610BC4 /* libCore.dylib */; };
+		55CBB1031B30DCBA00DB43A9 /* libEngine.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 55702243196A0055004B7637 /* libEngine.dylib */; };
+		55CBB1051B30DCD300DB43A9 /* libEngine.dylib in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 55702243196A0055004B7637 /* libEngine.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		55CBB1061B30DCD300DB43A9 /* libCore.dylib in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 551F4329196A0AAD00610BC4 /* libCore.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		55CBB1081B30DCFB00DB43A9 /* libSDLDrv.so in Copy PlugIns */ = {isa = PBXBuildFile; fileRef = 5570222E1969FD02004B7637 /* libSDLDrv.so */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		55CBB1091B30DCFB00DB43A9 /* libALAudio.so in Copy PlugIns */ = {isa = PBXBuildFile; fileRef = 55A32C121ADB36DB00608626 /* libALAudio.so */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		55CBB10A1B30DCFB00DB43A9 /* libOpenGLDrv.so in Copy PlugIns */ = {isa = PBXBuildFile; fileRef = 55A32C2F1ADB413400608626 /* libOpenGLDrv.so */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		55F13BAD194609DB006E4D16 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F13BAC194609DB006E4D16 /* Cocoa.framework */; };
 		55F13BB7194609DB006E4D16 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 55F13BB5194609DB006E4D16 /* InfoPlist.strings */; };
 		55F13BB9194609DB006E4D16 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F13BB8194609DB006E4D16 /* main.m */; };
 		55F13BBD194609DB006E4D16 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 55F13BBB194609DB006E4D16 /* Credits.rtf */; };
-		55F13BC0194609DB006E4D16 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F13BBF194609DB006E4D16 /* AppDelegate.m */; };
+		55F13BC0194609DB006E4D16 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 55F13BBF194609DB006E4D16 /* AppDelegate.mm */; };
 		55F13BC5194609DB006E4D16 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55F13BC4194609DB006E4D16 /* Images.xcassets */; };
 		55F13BE219460A5D006E4D16 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55F13BE419460A5D006E4D16 /* MainMenu.xib */; };
-		55F13BEF19460ACD006E4D16 /* ALAudio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55F13BE819460ACD006E4D16 /* ALAudio.cpp */; };
-		55F13BF019460ACD006E4D16 /* ALAudioMusic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55F13BE919460ACD006E4D16 /* ALAudioMusic.cpp */; };
-		55F13BF119460ACD006E4D16 /* ALAudioSubsystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55F13BEB19460ACD006E4D16 /* ALAudioSubsystem.cpp */; };
-		55F1470819460EBE006E4D16 /* libmikmod.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F1470719460E66006E4D16 /* libmikmod.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -366,6 +356,41 @@
 			remoteGlobalIDString = 55AA38251ADC4BC200D7F1A1;
 			remoteInfo = UCC;
 		};
+		55CBB0F61B30D8BD00DB43A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55F13BA1194609DB006E4D16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5570222D1969FD02004B7637;
+			remoteInfo = SDLDrv;
+		};
+		55CBB0F81B30D8BD00DB43A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55F13BA1194609DB006E4D16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 551F42E8196A0AAD00610BC4;
+			remoteInfo = Core;
+		};
+		55CBB0FA1B30D8BD00DB43A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55F13BA1194609DB006E4D16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55702242196A0055004B7637;
+			remoteInfo = Engine;
+		};
+		55CBB0FC1B30D8BD00DB43A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55F13BA1194609DB006E4D16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55A32C111ADB36DB00608626;
+			remoteInfo = ALAudio;
+		};
+		55CBB0FE1B30D8BD00DB43A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55F13BA1194609DB006E4D16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55A32C2E1ADB413400608626;
+			remoteInfo = OpenGLDrv;
+		};
 		55F1470419460E66006E4D16 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 55F13D1C19460D44006E4D16 /* libmikmod.xcodeproj */;
@@ -378,13 +403,6 @@
 			containerPortal = 55F13D1C19460D44006E4D16 /* libmikmod.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = A4E3AF9005D43FCC000F1B47;
-			remoteInfo = "CoreAudio Static Library";
-		};
-		55F1470919460EC5006E4D16 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 55F13D1C19460D44006E4D16 /* libmikmod.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = A4E3AF5D05D43FCC000F1B47;
 			remoteInfo = "CoreAudio Static Library";
 		};
 /* End PBXContainerItemProxy section */
@@ -407,6 +425,31 @@
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 1;
+		};
+		55CBB1041B30DCC200DB43A9 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				55CBB1051B30DCD300DB43A9 /* libEngine.dylib in Copy Frameworks */,
+				55CBB1061B30DCD300DB43A9 /* libCore.dylib in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55CBB1071B30DCE500DB43A9 /* Copy PlugIns */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				55CBB1081B30DCFB00DB43A9 /* libSDLDrv.so in Copy PlugIns */,
+				55CBB1091B30DCFB00DB43A9 /* libALAudio.so in Copy PlugIns */,
+				55CBB10A1B30DCFB00DB43A9 /* libOpenGLDrv.so in Copy PlugIns */,
+			);
+			name = "Copy PlugIns";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -536,7 +579,7 @@
 		55F13BBA194609DB006E4D16 /* Surreal-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Surreal-Prefix.pch"; sourceTree = "<group>"; };
 		55F13BBC194609DB006E4D16 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		55F13BBE194609DB006E4D16 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		55F13BBF194609DB006E4D16 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		55F13BBF194609DB006E4D16 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		55F13BC4194609DB006E4D16 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		55F13BCB194609DB006E4D16 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		55F13BE319460A5D006E4D16 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -735,14 +778,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				551229E219462ECF000BFC2B /* SDL2.framework in Frameworks */,
-				551229DE19462EBE000BFC2B /* AudioToolbox.framework in Frameworks */,
-				551229DF19462EBE000BFC2B /* AudioUnit.framework in Frameworks */,
-				551229E019462EBE000BFC2B /* CoreAudio.framework in Frameworks */,
-				551229D919462EAF000BFC2B /* OpenAL.framework in Frameworks */,
-				551229DA19462EAF000BFC2B /* OpenGL.framework in Frameworks */,
-				551229D519462EA5000BFC2B /* libalure.a in Frameworks */,
-				55F1470819460EBE006E4D16 /* libmikmod.a in Frameworks */,
+				55CBB1021B30DCBA00DB43A9 /* libCore.dylib in Frameworks */,
+				55CBB1031B30DCBA00DB43A9 /* libEngine.dylib in Frameworks */,
 				55F13BAD194609DB006E4D16 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1037,7 +1074,7 @@
 				55AA380A1ADC40D200D7F1A1 /* SDLLaunch */,
 				55122A47194631AF000BFC2B /* OpenGLDrv */,
 				55F13BBE194609DB006E4D16 /* AppDelegate.h */,
-				55F13BBF194609DB006E4D16 /* AppDelegate.m */,
+				55F13BBF194609DB006E4D16 /* AppDelegate.mm */,
 				55F13BC4194609DB006E4D16 /* Images.xcassets */,
 				55F13BB3194609DB006E4D16 /* Supporting Files */,
 			);
@@ -1680,11 +1717,17 @@
 				55F13BA5194609DB006E4D16 /* Sources */,
 				55F13BA6194609DB006E4D16 /* Frameworks */,
 				55F13BA7194609DB006E4D16 /* Resources */,
+				55CBB1041B30DCC200DB43A9 /* Copy Frameworks */,
+				55CBB1071B30DCE500DB43A9 /* Copy PlugIns */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				55F1470A19460EC5006E4D16 /* PBXTargetDependency */,
+				55CBB0F71B30D8BD00DB43A9 /* PBXTargetDependency */,
+				55CBB0F91B30D8BD00DB43A9 /* PBXTargetDependency */,
+				55CBB0FB1B30D8BD00DB43A9 /* PBXTargetDependency */,
+				55CBB0FD1B30D8BD00DB43A9 /* PBXTargetDependency */,
+				55CBB0FF1B30D8BD00DB43A9 /* PBXTargetDependency */,
 			);
 			name = Surreal;
 			productName = Surreal;
@@ -1899,17 +1942,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55122A55194631AF000BFC2B /* c_gclip.cpp in Sources */,
-				55F13BC0194609DB006E4D16 /* AppDelegate.m in Sources */,
-				55F13BF019460ACD006E4D16 /* ALAudioMusic.cpp in Sources */,
-				55F13BEF19460ACD006E4D16 /* ALAudio.cpp in Sources */,
-				55122A4519463168000BFC2B /* SDLDrv.cpp in Sources */,
-				55122A4419463168000BFC2B /* SDLClient.cpp in Sources */,
-				55122A58194631AF000BFC2B /* OpenGLDrv.cpp in Sources */,
-				55F13BF119460ACD006E4D16 /* ALAudioSubsystem.cpp in Sources */,
+				55F13BC0194609DB006E4D16 /* AppDelegate.mm in Sources */,
 				55F13BB9194609DB006E4D16 /* main.m in Sources */,
-				55122A57194631AF000BFC2B /* OpenGL.cpp in Sources */,
-				55122A4619463168000BFC2B /* SDLViewport.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2031,10 +2065,30 @@
 			target = 55AA38251ADC4BC200D7F1A1 /* UCC */;
 			targetProxy = 55AA38531ADC53CE00D7F1A1 /* PBXContainerItemProxy */;
 		};
-		55F1470A19460EC5006E4D16 /* PBXTargetDependency */ = {
+		55CBB0F71B30D8BD00DB43A9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "CoreAudio Static Library";
-			targetProxy = 55F1470919460EC5006E4D16 /* PBXContainerItemProxy */;
+			target = 5570222D1969FD02004B7637 /* SDLDrv */;
+			targetProxy = 55CBB0F61B30D8BD00DB43A9 /* PBXContainerItemProxy */;
+		};
+		55CBB0F91B30D8BD00DB43A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 551F42E8196A0AAD00610BC4 /* Core */;
+			targetProxy = 55CBB0F81B30D8BD00DB43A9 /* PBXContainerItemProxy */;
+		};
+		55CBB0FB1B30D8BD00DB43A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55702242196A0055004B7637 /* Engine */;
+			targetProxy = 55CBB0FA1B30D8BD00DB43A9 /* PBXContainerItemProxy */;
+		};
+		55CBB0FD1B30D8BD00DB43A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55A32C111ADB36DB00608626 /* ALAudio */;
+			targetProxy = 55CBB0FC1B30D8BD00DB43A9 /* PBXContainerItemProxy */;
+		};
+		55CBB0FF1B30D8BD00DB43A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55A32C2E1ADB413400608626 /* OpenGLDrv */;
+			targetProxy = 55CBB0FE1B30D8BD00DB43A9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -2514,6 +2568,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OSX/Surreal-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
+					"GPackage=GPackageUCC",
 					UTGLR_NO_APP_MALLOC,
 					UTGLR_UT_BUILD,
 					"$(inherited)",
@@ -2549,6 +2604,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OSX/Surreal-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
+					"GPackage=GPackageUCC",
 					UTGLR_NO_APP_MALLOC,
 					UTGLR_UT_BUILD,
 					"$(inherited)",
