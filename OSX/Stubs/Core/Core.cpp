@@ -5,6 +5,8 @@
 //  Created by C.W. Betts on 7/6/14.
 //  Copyright (c) 2014 C.W. Betts. All rights reserved.
 //
+//	This is a stub implementation of the Core library of Surreal.
+//
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -63,7 +65,7 @@ TCHAR GPackage[] = "Core";
 
 void FOutputDevice::Log( const TCHAR* S )
 {
-	
+	fprintf(stderr, "%s\n", S);
 }
 
 void FOutputDevice::Log( enum EName Type, const TCHAR* S )
@@ -73,7 +75,8 @@ void FOutputDevice::Log( enum EName Type, const TCHAR* S )
 
 void FOutputDevice::Log( const FString& S )
 {
-	
+	const TCHAR *a = *S;
+	Log(a);
 }
 
 void FOutputDevice::Log( enum EName Type, const FString& S )
@@ -83,7 +86,11 @@ void FOutputDevice::Log( enum EName Type, const FString& S )
 
 void FOutputDevice::Logf( const TCHAR* Fmt, ... )
 {
-	
+	va_list list;
+	va_start(list, Fmt);
+	vfprintf(stderr, Fmt, list);
+	va_end(list);
+	fprintf(stderr, "\n");
 }
 
 void FOutputDevice::Logf( enum EName Type, const TCHAR* Fmt, ... )
